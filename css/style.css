@@ -207,7 +207,7 @@ body {
     box-shadow: 8px 13.9px 24px 0 #0a0e34;
   }
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 767px) {
   /* line 200, ../scss/style.scss */
   .row {
     justify-content: center;
