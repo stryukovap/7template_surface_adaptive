@@ -1,15 +1,15 @@
-/* line 6, ../scss/style.scss */
+/* line 22, ../scss/style.scss */
 .container {
   max-width: 1560px;
   margin: 0 auto;
 }
 
-/* line 11, ../scss/style.scss */
+/* line 27, ../scss/style.scss */
 body {
   margin: 0;
 }
 
-/* line 15, ../scss/style.scss */
+/* line 31, ../scss/style.scss */
 .header {
   font-family: "Proxima Nova", Arial, sans-serif;
   color: #ffffff;
@@ -19,19 +19,19 @@ body {
   background-size: cover;
   background-position: center center;
 }
-/* line 23, ../scss/style.scss */
+/* line 39, ../scss/style.scss */
 .header__wrapper {
   background-color: rgba(10, 14, 52, 0.9);
 }
 
-/* line 28, ../scss/style.scss */
+/* line 44, ../scss/style.scss */
 .row {
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 54px;
 }
-/* line 33, ../scss/style.scss */
+/* line 49, ../scss/style.scss */
 .row__text {
   font-size: 14px;
   font-weight: 300;
@@ -39,7 +39,7 @@ body {
   letter-spacing: 0.7px;
 }
 
-/* line 41, ../scss/style.scss */
+/* line 57, ../scss/style.scss */
 .promo {
   margin-top: 309px;
   font-size: 90px;
@@ -48,36 +48,36 @@ body {
   font-stretch: normal;
   letter-spacing: 4.5px;
 }
-/* line 48, ../scss/style.scss */
+/* line 64, ../scss/style.scss */
 .promo__part1 {
   text-align: left;
   line-height: 0.35;
 }
-/* line 52, ../scss/style.scss */
+/* line 68, ../scss/style.scss */
 .promo__part2 {
   margin-top: 29px;
   text-align: right;
   line-height: 1.11;
 }
 
-/* line 60, ../scss/style.scss */
+/* line 76, ../scss/style.scss */
 .main-nav__list {
   margin: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-/* line 66, ../scss/style.scss */
+/* line 82, ../scss/style.scss */
 .main-nav__item {
   margin: 0;
   list-style: none;
   margin-right: 50px;
 }
-/* line 70, ../scss/style.scss */
+/* line 86, ../scss/style.scss */
 .main-nav__item:last-child {
   margin-right: 0;
 }
-/* line 74, ../scss/style.scss */
+/* line 90, ../scss/style.scss */
 .main-nav__link {
   color: #9071ea;
   text-decoration: none;
@@ -89,28 +89,28 @@ body {
   letter-spacing: 0.7px;
   text-align: left;
 }
-/* line 84, ../scss/style.scss */
+/* line 100, ../scss/style.scss */
 .main-nav__link:hover {
   color: #ffffff;
 }
 
-/* line 90, ../scss/style.scss */
+/* line 106, ../scss/style.scss */
 .download {
   display: flex;
   justify-content: center;
   padding-bottom: 110px;
   margin-top: 181px;
 }
-/* line 95, ../scss/style.scss */
+/* line 111, ../scss/style.scss */
 .download__link {
   margin-right: 50px;
 }
-/* line 97, ../scss/style.scss */
+/* line 113, ../scss/style.scss */
 .download__link:last-child {
   margin-right: 0;
 }
 
-/* line 103, ../scss/style.scss */
+/* line 119, ../scss/style.scss */
 .button-link {
   font-size: 14px;
   font-weight: 300;
@@ -129,26 +129,136 @@ body {
   align-items: center;
   text-decoration: none;
 }
-/* line 120, ../scss/style.scss */
+/* line 136, ../scss/style.scss */
 .button-link:hover {
   color: #0a0e34;
 }
-/* line 123, ../scss/style.scss */
+/* line 139, ../scss/style.scss */
 .button-link__icon {
   font-size: 38px;
 }
-/* line 126, ../scss/style.scss */
+/* line 142, ../scss/style.scss */
 .button-link__wrapper {
   margin-left: 26px;
 }
-/* line 129, ../scss/style.scss */
+/* line 145, ../scss/style.scss */
 .button-link__part1 {
   display: block;
 }
-/* line 132, ../scss/style.scss */
+/* line 148, ../scss/style.scss */
 .button-link__part2 {
   display: block;
   font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+  /* line 155, ../scss/style.scss */
+  .row {
+    padding-top: 53px;
+  }
+
+  /* line 158, ../scss/style.scss */
+  .promo {
+    margin-top: 194px;
+    font-size: 64px;
+    letter-spacing: 3.2px;
+  }
+  /* line 162, ../scss/style.scss */
+  .promo__part1 {
+    line-height: 1;
+    margin-left: 89px;
+  }
+  /* line 166, ../scss/style.scss */
+  .promo__part2 {
+    line-height: normal;
+    text-align: left;
+    margin-top: 33px;
+    margin-left: 197px;
+  }
+
+  /* line 174, ../scss/style.scss */
+  .main-nav__list {
+    justify-content: space-around;
+  }
+  /* line 177, ../scss/style.scss */
+  .main-nav__item {
+    margin: 0;
+    margin-top: 184px;
+  }
+
+  /* line 182, ../scss/style.scss */
+  .download {
+    padding-bottom: 91px;
+    margin-top: 116px;
+  }
+  /* line 185, ../scss/style.scss */
+  .download__link {
+    margin-right: 30px;
+  }
+  /* line 187, ../scss/style.scss */
+  .download__link:last-child {
+    margin-right: 0;
+  }
+}
+@media screen and (max-width: 320px) {
+  /* line 195, ../scss/style.scss */
+  .row {
+    justify-content: center;
+    padding-top: 39px;
+  }
+  /* line 198, ../scss/style.scss */
+  .row__text {
+    display: none;
+  }
+
+  /* line 202, ../scss/style.scss */
+  .promo {
+    margin-top: 141px;
+    font-size: 32px;
+    letter-spacing: 1.6px;
+  }
+  /* line 206, ../scss/style.scss */
+  .promo__part1 {
+    line-height: 1;
+    margin-left: 11px;
+  }
+  /* line 210, ../scss/style.scss */
+  .promo__part2 {
+    line-height: normal;
+    text-align: left;
+    margin-top: 28px;
+    margin-left: 66px;
+  }
+
+  /* line 217, ../scss/style.scss */
+  .download {
+    padding-bottom: 91px;
+    margin-top: 116px;
+  }
+  /* line 220, ../scss/style.scss */
+  .download__link {
+    margin-right: 8px;
+  }
+  /* line 222, ../scss/style.scss */
+  .download__link:last-child {
+    margin-right: 0;
+  }
+
+  /* line 227, ../scss/style.scss */
+  .button-link {
+    font-size: 8px;
+    letter-spacing: 0.4px;
+    padding: 11px 17px 10px 20px;
+    box-shadow: 0px 10px 16px 0 #0a0e34;
+  }
+  /* line 232, ../scss/style.scss */
+  .button-link__icon {
+    font-size: 17px;
+  }
+  /* line 235, ../scss/style.scss */
+  .button-link__wrapper {
+    margin-left: 10px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
