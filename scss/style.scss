@@ -20,7 +20,7 @@ body {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
-    .header_wrapper {
+    &__wrapper {
         background-color: rgba(10, 14, 52, 0.9);
     }
 }
@@ -30,12 +30,10 @@ body {
     justify-content: space-between;
     align-items: center;
     padding-top: 54px;
-    .row__text {
-        // color: $white;
-        // font-family: "Proxima Nova", Arial, sans-serif;
+    &__text {
         font-size: 14px;
         font-weight: 300;
-        line-height: 34.49px; // text-transform: uppercase;
+        line-height: 34.49px;
         letter-spacing: 0.7px;
     }
 }
@@ -47,32 +45,33 @@ body {
     font-style: normal;
     font-stretch: normal;
     letter-spacing: 4.5px;
-    .promo__part1 {
+    &__part1 {
         text-align: left;
         line-height: 0.35;
     }
-    .promo__part2 {
+    &__part2 {
         margin-top: 29px;
         text-align: right;
         line-height: 1.11;
     }
 }
 
-.main-nav__list {
-    margin: 0;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-}
-
-.main_nav__item {
-    margin: 0;
-    list-style: none;
-    margin-right: 50px;
-    &:last-child {
-        margin-right: 0;
+.main-nav {
+    &__list {
+        margin: 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
     }
-    .main-nav__link {
+    &__item {
+        margin: 0;
+        list-style: none;
+        margin-right: 50px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
+    &__link {
         color: $purpley-two;
         text-decoration: none;
         font-size: 14px;
@@ -93,6 +92,12 @@ body {
     justify-content: center;
     padding-bottom: 110px;
     margin-top: 181px;
+    &__link {
+        margin-right: 50px;
+        &:last-child {
+            margin-right: 0;
+        }
+    }
 }
 
 .button-link {
@@ -112,23 +117,19 @@ body {
     justify-content: space-between;
     align-items: center;
     text-decoration: none;
-    margin-right: 50px;
-    &:last-child{
-        margin-right: 0;
-    }
     &:hover {
         color: $dark-indigo;
     }
-    .button-link__icon {
+    &__icon {
         font-size: 38px;
     }
-    .button-link__wrapper {
+    &__wrapper {
         margin-left: 26px;
     }
-    .button-link__part1 {
+    &__part1 {
         display: block;
     }
-    .button-link__part2 {
+    &__part2 {
         display: block;
         font-weight: 600;
     }
