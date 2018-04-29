@@ -4,4 +4,19 @@
   margin: 0 auto;
 }
 
+/* line 6, ../scss/style.scss */
+body {
+  margin: 0;
+}
+
+/* line 9, ../scss/style.scss */
+.header {
+  width: 100%;
+  background-color: #0a0e34;
+  background-image: url(../img/headercover_1920x1082.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+
 /*# sourceMappingURL=style.css.map */
