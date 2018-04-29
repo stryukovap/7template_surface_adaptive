@@ -1,1 +1,5 @@
 $container:1560px;
+.container {
+    max-width: $container;
+    margin: 0 auto;
+}
