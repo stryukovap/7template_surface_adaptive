@@ -1,8 +1,6 @@
 /* line 22, ../scss/style.scss */
 .container {
   max-width: 1560px;
-  margin-left: 5px;
-  margin-right: 5px;
   margin: 0 auto;
 }
 
@@ -28,12 +26,13 @@ body {
 
 /* line 46, ../scss/style.scss */
 .row {
+  font-family: "Proxima Nova", Arial, sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
   padding-top: 54px;
 }
-/* line 51, ../scss/style.scss */
+/* line 52, ../scss/style.scss */
 .row__text {
   font-size: 14px;
   font-weight: 300;
@@ -41,8 +40,9 @@ body {
   letter-spacing: 0.7px;
 }
 
-/* line 59, ../scss/style.scss */
+/* line 60, ../scss/style.scss */
 .promo {
+  font-family: "Proxima Nova", Arial, sans-serif;
   margin-top: 309px;
   font-size: 90px;
   font-weight: bold;
@@ -50,36 +50,40 @@ body {
   font-stretch: normal;
   letter-spacing: 4.5px;
 }
-/* line 66, ../scss/style.scss */
+/* line 68, ../scss/style.scss */
 .promo__part1 {
   text-align: left;
   line-height: 0.35;
 }
-/* line 70, ../scss/style.scss */
+/* line 72, ../scss/style.scss */
 .promo__part2 {
   margin-top: 29px;
   text-align: right;
   line-height: 1.11;
 }
 
-/* line 78, ../scss/style.scss */
+/* line 79, ../scss/style.scss */
+.main-nav {
+  font-family: "Proxima Nova", Arial, sans-serif;
+}
+/* line 81, ../scss/style.scss */
 .main-nav__list {
   margin: 0;
   display: flex;
   justify-content: flex-end;
   align-items: center;
 }
-/* line 84, ../scss/style.scss */
+/* line 87, ../scss/style.scss */
 .main-nav__item {
   margin: 0;
   list-style: none;
   margin-right: 50px;
 }
-/* line 88, ../scss/style.scss */
+/* line 91, ../scss/style.scss */
 .main-nav__item:last-child {
   margin-right: 0;
 }
-/* line 92, ../scss/style.scss */
+/* line 95, ../scss/style.scss */
 .main-nav__link {
   color: #9071ea;
   text-decoration: none;
@@ -91,29 +95,30 @@ body {
   letter-spacing: 0.7px;
   text-align: left;
 }
-/* line 102, ../scss/style.scss */
+/* line 105, ../scss/style.scss */
 .main-nav__link:hover {
   color: #ffffff;
 }
 
-/* line 108, ../scss/style.scss */
+/* line 111, ../scss/style.scss */
 .download {
   display: flex;
   justify-content: center;
   padding-bottom: 110px;
   margin-top: 181px;
 }
-/* line 113, ../scss/style.scss */
+/* line 116, ../scss/style.scss */
 .download__link {
   margin-right: 50px;
 }
-/* line 115, ../scss/style.scss */
+/* line 118, ../scss/style.scss */
 .download__link:last-child {
   margin-right: 0;
 }
 
-/* line 121, ../scss/style.scss */
+/* line 124, ../scss/style.scss */
 .button-link {
+  font-family: "Proxima Nova", Arial, sans-serif;
   font-size: 14px;
   font-weight: 300;
   font-style: normal;
@@ -131,33 +136,37 @@ body {
   align-items: center;
   text-decoration: none;
 }
-/* line 138, ../scss/style.scss */
+/* line 142, ../scss/style.scss */
 .button-link:hover {
   color: #0a0e34;
 }
-/* line 141, ../scss/style.scss */
+/* line 145, ../scss/style.scss */
 .button-link__icon {
   font-size: 38px;
 }
-/* line 144, ../scss/style.scss */
+/* line 148, ../scss/style.scss */
 .button-link__wrapper {
   margin-left: 26px;
 }
-/* line 147, ../scss/style.scss */
+/* line 151, ../scss/style.scss */
 .button-link__part1 {
   display: block;
 }
-/* line 150, ../scss/style.scss */
+/* line 154, ../scss/style.scss */
 .button-link__part2 {
   display: block;
   font-weight: 600;
 }
 
-/* line 157, ../scss/style.scss */
+/* line 160, ../scss/style.scss */
+.features {
+  font-family: "Proxima Nova", Arial, sans-serif;
+}
+/* line 162, ../scss/style.scss */
 .features__card {
   position: relative;
 }
-/* line 159, ../scss/style.scss */
+/* line 164, ../scss/style.scss */
 .features__card--athlets::before {
   content: "";
   width: 50%;
@@ -166,54 +175,62 @@ body {
   position: absolute;
   background-image: url(../img/footballer_678x950.png);
   background-repeat: no-repeat;
-  background-position: center center;
-  background-size: contain;
-  top: 50px;
+  background-position: center right;
+  background-size: 678px 950px;
+  top: 5%;
   z-index: 2;
 }
-/* line 172, ../scss/style.scss */
+/* line 177, ../scss/style.scss */
 .features__card--players::before {
   content: "";
-  width: 50%;
-  height: 100%;
+  width: 100%;
+  height: 105%;
   display: block;
   position: absolute;
   background-image: url(../img/player_991x815.png);
   background-repeat: no-repeat;
-  background-position: center right;
-  background-size: contain;
-  top: -140px;
-  right: 200px;
+  background-position: center left;
+  background-size: 991px 815px;
+  top: -19%;
+  left: 40%;
   z-index: 2;
 }
 
-/* line 190, ../scss/style.scss */
+/* line 194, ../scss/style.scss */
+.card {
+  font-family: "Proxima Nova", Arial, sans-serif;
+}
+/* line 196, ../scss/style.scss */
 .card__row0 {
   background-color: #ffffff;
 }
-/* line 193, ../scss/style.scss */
+/* line 199, ../scss/style.scss */
 .card__row1 {
   background-color: #ffffff;
 }
-/* line 196, ../scss/style.scss */
+/* line 202, ../scss/style.scss */
 .card__row2 {
   background-color: #f5f4fa;
 }
-/* line 199, ../scss/style.scss */
+/* line 205, ../scss/style.scss */
 .card__row3 {
   background-color: #5e42b0;
 }
-/* line 202, ../scss/style.scss */
+/* line 207, ../scss/style.scss */
+.card__row3--invert {
+  background-color: #0a0e34;
+}
+/* line 211, ../scss/style.scss */
 .card__wrap {
   display: flex;
   align-items: flex-end;
   flex-direction: column;
 }
-/* line 206, ../scss/style.scss */
+/* line 215, ../scss/style.scss */
 .card__wrap--invert {
   align-items: flex-start;
 }
-/* line 210, ../scss/style.scss */
+/* line 219, ../scss/style.scss */
 .card__title {
   width: 50%;
   margin: 0;
@@ -227,9 +244,14 @@ body {
   text-align: left;
   color: #e7e7e7;
   margin-top: 112px;
+  padding-left: 45px;
 }
 
-/* line 227, ../scss/style.scss */
+/* line 236, ../scss/style.scss */
+.row {
+  font-family: "Proxima Nova", Arial, sans-serif;
+}
+/* line 238, ../scss/style.scss */
 .row__title {
   width: 50%;
   margin: 0;
@@ -243,8 +265,9 @@ body {
   text-align: left;
   color: #c1c1c1;
   padding-top: 64px;
+  padding-left: 80px;
 }
-/* line 241, ../scss/style.scss */
+/* line 253, ../scss/style.scss */
 .row__description {
   width: 50%;
   margin: 0;
@@ -258,31 +281,32 @@ body {
   color: #000000;
   margin-top: 31px;
   padding-bottom: 60px;
+  padding-left: 45px;
 }
-/* line 254, ../scss/style.scss */
+/* line 267, ../scss/style.scss */
 .row__description--invert {
   color: #ffffff;
   padding-bottom: 102px;
 }
 
 @media scren and (max-width: 1440px) {
-  /* line 262, ../scss/style.scss */
+  /* line 275, ../scss/style.scss */
   .row {
     padding-top: 53px;
   }
 
-  /* line 265, ../scss/style.scss */
+  /* line 278, ../scss/style.scss */
   .promo {
     margin-top: 194px;
     font-size: 64px;
     letter-spacing: 3.2px;
   }
-  /* line 269, ../scss/style.scss */
+  /* line 282, ../scss/style.scss */
   .promo__part1 {
     line-height: 1;
     margin-left: 89px;
   }
-  /* line 273, ../scss/style.scss */
+  /* line 286, ../scss/style.scss */
   .promo__part2 {
     line-height: normal;
     text-align: left;
@@ -290,58 +314,58 @@ body {
     margin-left: 197px;
   }
 
-  /* line 281, ../scss/style.scss */
+  /* line 294, ../scss/style.scss */
   .main-nav__list {
     justify-content: space-around;
   }
-  /* line 284, ../scss/style.scss */
+  /* line 297, ../scss/style.scss */
   .main-nav__item {
     margin: 0;
     margin-top: 184px;
   }
 
-  /* line 289, ../scss/style.scss */
+  /* line 302, ../scss/style.scss */
   .download {
     padding-bottom: 91px;
     margin-top: 116px;
   }
-  /* line 292, ../scss/style.scss */
+  /* line 305, ../scss/style.scss */
   .download__link {
     margin-right: 30px;
   }
-  /* line 294, ../scss/style.scss */
+  /* line 307, ../scss/style.scss */
   .download__link:last-child {
     margin-right: 0;
   }
 
-  /* line 299, ../scss/style.scss */
+  /* line 312, ../scss/style.scss */
   .button-link {
     box-shadow: 8px 13.9px 24px 0 #0a0e34;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 305, ../scss/style.scss */
+  /* line 318, ../scss/style.scss */
   .row {
     justify-content: center;
     padding-top: 39px;
   }
-  /* line 308, ../scss/style.scss */
+  /* line 321, ../scss/style.scss */
   .row__text {
     display: none;
   }
 
-  /* line 312, ../scss/style.scss */
+  /* line 325, ../scss/style.scss */
   .promo {
     margin-top: 141px;
     font-size: 32px;
     letter-spacing: 1.6px;
   }
-  /* line 316, ../scss/style.scss */
+  /* line 329, ../scss/style.scss */
   .promo__part1 {
     line-height: 1;
     margin-left: 10px;
   }
-  /* line 320, ../scss/style.scss */
+  /* line 333, ../scss/style.scss */
   .promo__part2 {
     line-height: normal;
     text-align: left;
@@ -349,53 +373,53 @@ body {
     margin-left: 60px;
   }
 
-  /* line 327, ../scss/style.scss */
+  /* line 340, ../scss/style.scss */
   .header-wrapper-mobile {
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
   }
 
-  /* line 333, ../scss/style.scss */
+  /* line 346, ../scss/style.scss */
   .main-nav__list {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 46px;
     padding-bottom: 20px;
   }
-  /* line 339, ../scss/style.scss */
+  /* line 352, ../scss/style.scss */
   .main-nav__item {
     margin: 0;
     padding: 0;
     margin-right: 25px;
   }
 
-  /* line 347, ../scss/style.scss */
+  /* line 360, ../scss/style.scss */
   .download {
     padding-bottom: 0;
     margin-top: 118px;
   }
-  /* line 350, ../scss/style.scss */
+  /* line 363, ../scss/style.scss */
   .download__link {
     margin-right: 8px;
   }
-  /* line 352, ../scss/style.scss */
+  /* line 365, ../scss/style.scss */
   .download__link:last-child {
     margin-right: 0;
   }
 
-  /* line 357, ../scss/style.scss */
+  /* line 370, ../scss/style.scss */
   .button-link {
     font-size: 8px;
     letter-spacing: 0.4px;
     padding: 11px 17px 10px 20px;
     box-shadow: 0px 10px 16px 0 #0a0e34;
   }
-  /* line 362, ../scss/style.scss */
+  /* line 375, ../scss/style.scss */
   .button-link__icon {
     font-size: 17px;
   }
-  /* line 365, ../scss/style.scss */
+  /* line 378, ../scss/style.scss */
   .button-link__wrapper {
     margin-left: 10px;
   }

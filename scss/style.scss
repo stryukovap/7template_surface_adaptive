@@ -21,8 +21,8 @@ $perrywinkle: #9173e6;
 $white-three: #efefef;
 .container {
     max-width: $container;
-    margin-left: 5px;
-    margin-right: 5px;
+    // margin-left: 5px;
+    // margin-right: 5px;
     margin: 0 auto;
 }
 
@@ -44,6 +44,7 @@ body {
 }
 
 .row {
+    font-family: "Proxima Nova", Arial, sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -57,6 +58,7 @@ body {
 }
 
 .promo {
+    font-family: "Proxima Nova", Arial, sans-serif;
     margin-top: 309px;
     font-size: 90px;
     font-weight: bold;
@@ -75,6 +77,7 @@ body {
 }
 
 .main-nav {
+    font-family: "Proxima Nova", Arial, sans-serif;
     &__list {
         margin: 0;
         display: flex;
@@ -119,6 +122,7 @@ body {
 }
 
 .button-link {
+    font-family: "Proxima Nova", Arial, sans-serif;
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
@@ -154,6 +158,7 @@ body {
 }
 
 .features {
+    font-family: "Proxima Nova", Arial, sans-serif;
     &__card {
         position: relative;
         &--athlets::before {
@@ -164,29 +169,30 @@ body {
             position: absolute;
             background-image: url(../img/footballer_678x950.png);
             background-repeat: no-repeat;
-            background-position: center center;
-            background-size: contain;
-            top: 50px;
+            background-position: center right;
+            background-size: 678px 950px;
+            top: 5%;
             z-index: 2;
         }
         &--players::before {
             content: "";
-            width: 50%;
-            height: 100%;
+            width: 100%;
+            height: 105%;
             display: block;
             position: absolute;
             background-image: url(../img/player_991x815.png);
             background-repeat: no-repeat;
-            background-position: center right;
-            background-size: contain;
-            top: -140px;
-            right: 200px;
+            background-position: center left;
+            background-size: 991px 815px;
+            top: -19%;
+            left: 40%;
             z-index: 2;
         }
     }
 }
 
 .card {
+    font-family: "Proxima Nova", Arial, sans-serif;
     &__row0 {
         background-color: $white;
     }
@@ -198,6 +204,9 @@ body {
     }
     &__row3 {
         background-color: #5e42b0;
+        &--invert{
+            background-color: $dark-indigo;
+        }
     }
     &__wrap {
         display: flex;
@@ -220,10 +229,12 @@ body {
         text-align: left;
         color: $white-two;
         margin-top: 112px;
+        padding-left: 45px;
     }
 }
 
 .row {
+    font-family: "Proxima Nova", Arial, sans-serif;
     &__title {
         width: 50%;
         margin: 0;
@@ -237,6 +248,7 @@ body {
         text-align: left;
         color: $pinkish-grey;
         padding-top: 64px;
+        padding-left: 80px;
     }
     &__description {
         width: 50%;
@@ -251,6 +263,7 @@ body {
         color: $black-four;
         margin-top: 31px;
         padding-bottom: 60px;
+        padding-left: 45px;
         &--invert {
             color: $white;
             padding-bottom: 102px;
