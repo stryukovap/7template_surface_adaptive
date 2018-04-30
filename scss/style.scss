@@ -152,14 +152,113 @@ body {
         font-weight: 600;
     }
 }
-.features{
-    
+
+.features {
+    &__card {
+        position: relative;
+        &--athlets::before {
+            content: "";
+            width: 50%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            background-image: url(../img/footballer_678x950.png);
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
+            top: 50px;
+            z-index: 2;
+        }
+        &--players::before {
+            content: "";
+            width: 50%;
+            height: 100%;
+            display: block;
+            position: absolute;
+            background-image: url(../img/player_991x815.png);
+            background-repeat: no-repeat;
+            background-position: center right;
+            background-size: contain;
+            top: -140px;
+            right: 200px;
+            z-index: 2;
+        }
+    }
 }
 
+.card {
+    &__row0 {
+        background-color: $white;
+    }
+    &__row1 {
+        background-color: $white;
+    }
+    &__row2 {
+        background-color: #f5f4fa;
+    }
+    &__row3 {
+        background-color: #5e42b0;
+    }
+    &__wrap {
+        display: flex;
+        align-items: flex-end;
+        flex-direction: column;
+        &--invert {
+            align-items: flex-start;
+        }
+    }
+    &__title {
+        width: 50%;
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 90px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.67;
+        letter-spacing: normal;
+        text-align: left;
+        color: $white-two;
+        margin-top: 112px;
+    }
+}
 
+.row {
+    &__title {
+        width: 50%;
+        margin: 0;
+        text-transform: uppercase;
+        font-size: 36px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.96;
+        letter-spacing: 1.8px;
+        text-align: left;
+        color: $pinkish-grey;
+        padding-top: 64px;
+    }
+    &__description {
+        width: 50%;
+        margin: 0;
+        font-size: 20px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 1.4;
+        letter-spacing: 1px;
+        text-align: left;
+        color: $black-four;
+        margin-top: 31px;
+        padding-bottom: 60px;
+        &--invert {
+            color: $white;
+            padding-bottom: 102px;
+        }
+    }
+}
 
-
-@media screen and (max-width:1440px) {
+@media scren and (max-width:1440px) {
     .row {
         padding-top: 53px;
     }
@@ -240,8 +339,7 @@ body {
         &__item {
             margin: 0;
             padding: 0;
-            margin-right: 25px;
-            // &:last-child {
+            margin-right: 25px; // &:last-child {
             //     margin-right: 0;
             // }
         }

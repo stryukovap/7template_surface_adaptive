@@ -153,24 +153,136 @@ body {
   font-weight: 600;
 }
 
-@media screen and (max-width: 1440px) {
-  /* line 163, ../scss/style.scss */
+/* line 157, ../scss/style.scss */
+.features__card {
+  position: relative;
+}
+/* line 159, ../scss/style.scss */
+.features__card--athlets::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background-image: url(../img/footballer_678x950.png);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: contain;
+  top: 50px;
+  z-index: 2;
+}
+/* line 172, ../scss/style.scss */
+.features__card--players::before {
+  content: "";
+  width: 50%;
+  height: 100%;
+  display: block;
+  position: absolute;
+  background-image: url(../img/player_991x815.png);
+  background-repeat: no-repeat;
+  background-position: center right;
+  background-size: contain;
+  top: -140px;
+  right: 200px;
+  z-index: 2;
+}
+
+/* line 190, ../scss/style.scss */
+.card__row0 {
+  background-color: #ffffff;
+}
+/* line 193, ../scss/style.scss */
+.card__row1 {
+  background-color: #ffffff;
+}
+/* line 196, ../scss/style.scss */
+.card__row2 {
+  background-color: #f5f4fa;
+}
+/* line 199, ../scss/style.scss */
+.card__row3 {
+  background-color: #5e42b0;
+}
+/* line 202, ../scss/style.scss */
+.card__wrap {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+}
+/* line 206, ../scss/style.scss */
+.card__wrap--invert {
+  align-items: flex-start;
+}
+/* line 210, ../scss/style.scss */
+.card__title {
+  width: 50%;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 90px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #e7e7e7;
+  margin-top: 112px;
+}
+
+/* line 227, ../scss/style.scss */
+.row__title {
+  width: 50%;
+  margin: 0;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.96;
+  letter-spacing: 1.8px;
+  text-align: left;
+  color: #c1c1c1;
+  padding-top: 64px;
+}
+/* line 241, ../scss/style.scss */
+.row__description {
+  width: 50%;
+  margin: 0;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #000000;
+  margin-top: 31px;
+  padding-bottom: 60px;
+}
+/* line 254, ../scss/style.scss */
+.row__description--invert {
+  color: #ffffff;
+  padding-bottom: 102px;
+}
+
+@media scren and (max-width: 1440px) {
+  /* line 262, ../scss/style.scss */
   .row {
     padding-top: 53px;
   }
 
-  /* line 166, ../scss/style.scss */
+  /* line 265, ../scss/style.scss */
   .promo {
     margin-top: 194px;
     font-size: 64px;
     letter-spacing: 3.2px;
   }
-  /* line 170, ../scss/style.scss */
+  /* line 269, ../scss/style.scss */
   .promo__part1 {
     line-height: 1;
     margin-left: 89px;
   }
-  /* line 174, ../scss/style.scss */
+  /* line 273, ../scss/style.scss */
   .promo__part2 {
     line-height: normal;
     text-align: left;
@@ -178,58 +290,58 @@ body {
     margin-left: 197px;
   }
 
-  /* line 182, ../scss/style.scss */
+  /* line 281, ../scss/style.scss */
   .main-nav__list {
     justify-content: space-around;
   }
-  /* line 185, ../scss/style.scss */
+  /* line 284, ../scss/style.scss */
   .main-nav__item {
     margin: 0;
     margin-top: 184px;
   }
 
-  /* line 190, ../scss/style.scss */
+  /* line 289, ../scss/style.scss */
   .download {
     padding-bottom: 91px;
     margin-top: 116px;
   }
-  /* line 193, ../scss/style.scss */
+  /* line 292, ../scss/style.scss */
   .download__link {
     margin-right: 30px;
   }
-  /* line 195, ../scss/style.scss */
+  /* line 294, ../scss/style.scss */
   .download__link:last-child {
     margin-right: 0;
   }
 
-  /* line 200, ../scss/style.scss */
+  /* line 299, ../scss/style.scss */
   .button-link {
     box-shadow: 8px 13.9px 24px 0 #0a0e34;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 206, ../scss/style.scss */
+  /* line 305, ../scss/style.scss */
   .row {
     justify-content: center;
     padding-top: 39px;
   }
-  /* line 209, ../scss/style.scss */
+  /* line 308, ../scss/style.scss */
   .row__text {
     display: none;
   }
 
-  /* line 213, ../scss/style.scss */
+  /* line 312, ../scss/style.scss */
   .promo {
     margin-top: 141px;
     font-size: 32px;
     letter-spacing: 1.6px;
   }
-  /* line 217, ../scss/style.scss */
+  /* line 316, ../scss/style.scss */
   .promo__part1 {
     line-height: 1;
     margin-left: 10px;
   }
-  /* line 221, ../scss/style.scss */
+  /* line 320, ../scss/style.scss */
   .promo__part2 {
     line-height: normal;
     text-align: left;
@@ -237,53 +349,53 @@ body {
     margin-left: 60px;
   }
 
-  /* line 228, ../scss/style.scss */
+  /* line 327, ../scss/style.scss */
   .header-wrapper-mobile {
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
   }
 
-  /* line 234, ../scss/style.scss */
+  /* line 333, ../scss/style.scss */
   .main-nav__list {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 46px;
     padding-bottom: 20px;
   }
-  /* line 240, ../scss/style.scss */
+  /* line 339, ../scss/style.scss */
   .main-nav__item {
     margin: 0;
     padding: 0;
     margin-right: 25px;
   }
 
-  /* line 249, ../scss/style.scss */
+  /* line 347, ../scss/style.scss */
   .download {
     padding-bottom: 0;
     margin-top: 118px;
   }
-  /* line 252, ../scss/style.scss */
+  /* line 350, ../scss/style.scss */
   .download__link {
     margin-right: 8px;
   }
-  /* line 254, ../scss/style.scss */
+  /* line 352, ../scss/style.scss */
   .download__link:last-child {
     margin-right: 0;
   }
 
-  /* line 259, ../scss/style.scss */
+  /* line 357, ../scss/style.scss */
   .button-link {
     font-size: 8px;
     letter-spacing: 0.4px;
     padding: 11px 17px 10px 20px;
     box-shadow: 0px 10px 16px 0 #0a0e34;
   }
-  /* line 264, ../scss/style.scss */
+  /* line 362, ../scss/style.scss */
   .button-link__icon {
     font-size: 17px;
   }
-  /* line 267, ../scss/style.scss */
+  /* line 365, ../scss/style.scss */
   .button-link__wrapper {
     margin-left: 10px;
   }
