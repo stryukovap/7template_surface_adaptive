@@ -1,8 +1,8 @@
 /* line 22, ../scss/style.scss */
 .container {
   max-width: 1560px;
-  padding-left: 5px;
-  padding-right: 5px;
+  margin-left: 5px;
+  margin-right: 5px;
   margin: 0 auto;
 }
 
@@ -154,23 +154,23 @@ body {
 }
 
 @media screen and (max-width: 1440px) {
-  /* line 157, ../scss/style.scss */
+  /* line 163, ../scss/style.scss */
   .row {
     padding-top: 53px;
   }
 
-  /* line 160, ../scss/style.scss */
+  /* line 166, ../scss/style.scss */
   .promo {
     margin-top: 194px;
     font-size: 64px;
     letter-spacing: 3.2px;
   }
-  /* line 164, ../scss/style.scss */
+  /* line 170, ../scss/style.scss */
   .promo__part1 {
     line-height: 1;
     margin-left: 89px;
   }
-  /* line 168, ../scss/style.scss */
+  /* line 174, ../scss/style.scss */
   .promo__part2 {
     line-height: normal;
     text-align: left;
@@ -178,58 +178,58 @@ body {
     margin-left: 197px;
   }
 
-  /* line 176, ../scss/style.scss */
+  /* line 182, ../scss/style.scss */
   .main-nav__list {
     justify-content: space-around;
   }
-  /* line 179, ../scss/style.scss */
+  /* line 185, ../scss/style.scss */
   .main-nav__item {
     margin: 0;
     margin-top: 184px;
   }
 
-  /* line 184, ../scss/style.scss */
+  /* line 190, ../scss/style.scss */
   .download {
     padding-bottom: 91px;
     margin-top: 116px;
   }
-  /* line 187, ../scss/style.scss */
+  /* line 193, ../scss/style.scss */
   .download__link {
     margin-right: 30px;
   }
-  /* line 189, ../scss/style.scss */
+  /* line 195, ../scss/style.scss */
   .download__link:last-child {
     margin-right: 0;
   }
 
-  /* line 194, ../scss/style.scss */
+  /* line 200, ../scss/style.scss */
   .button-link {
     box-shadow: 8px 13.9px 24px 0 #0a0e34;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 200, ../scss/style.scss */
+  /* line 206, ../scss/style.scss */
   .row {
     justify-content: center;
     padding-top: 39px;
   }
-  /* line 203, ../scss/style.scss */
+  /* line 209, ../scss/style.scss */
   .row__text {
     display: none;
   }
 
-  /* line 207, ../scss/style.scss */
+  /* line 213, ../scss/style.scss */
   .promo {
     margin-top: 141px;
     font-size: 32px;
     letter-spacing: 1.6px;
   }
-  /* line 211, ../scss/style.scss */
+  /* line 217, ../scss/style.scss */
   .promo__part1 {
     line-height: 1;
     margin-left: 10px;
   }
-  /* line 215, ../scss/style.scss */
+  /* line 221, ../scss/style.scss */
   .promo__part2 {
     line-height: normal;
     text-align: left;
@@ -237,53 +237,53 @@ body {
     margin-left: 60px;
   }
 
-  /* line 222, ../scss/style.scss */
+  /* line 228, ../scss/style.scss */
   .header-wrapper-mobile {
     display: flex;
     justify-content: center;
     flex-direction: column-reverse;
   }
 
-  /* line 228, ../scss/style.scss */
+  /* line 234, ../scss/style.scss */
   .main-nav__list {
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 46px;
     padding-bottom: 20px;
   }
-  /* line 234, ../scss/style.scss */
+  /* line 240, ../scss/style.scss */
   .main-nav__item {
     margin: 0;
     padding: 0;
     margin-right: 25px;
   }
 
-  /* line 243, ../scss/style.scss */
+  /* line 249, ../scss/style.scss */
   .download {
     padding-bottom: 0;
     margin-top: 118px;
   }
-  /* line 246, ../scss/style.scss */
+  /* line 252, ../scss/style.scss */
   .download__link {
     margin-right: 8px;
   }
-  /* line 248, ../scss/style.scss */
+  /* line 254, ../scss/style.scss */
   .download__link:last-child {
     margin-right: 0;
   }
 
-  /* line 253, ../scss/style.scss */
+  /* line 259, ../scss/style.scss */
   .button-link {
     font-size: 8px;
     letter-spacing: 0.4px;
     padding: 11px 17px 10px 20px;
     box-shadow: 0px 10px 16px 0 #0a0e34;
   }
-  /* line 258, ../scss/style.scss */
+  /* line 264, ../scss/style.scss */
   .button-link__icon {
     font-size: 17px;
   }
-  /* line 261, ../scss/style.scss */
+  /* line 267, ../scss/style.scss */
   .button-link__wrapper {
     margin-left: 10px;
   }
