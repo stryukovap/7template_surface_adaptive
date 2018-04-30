@@ -21,8 +21,7 @@ $perrywinkle: #9173e6;
 $white-three: #efefef;
 .container {
     max-width: $container;
-    // margin-left: 5px;
-    // margin-right: 5px;
+    outline: 1px solid green;
     margin: 0 auto;
 }
 
@@ -171,8 +170,7 @@ body {
             background-repeat: no-repeat;
             background-position: center right;
             background-size: 678px 950px;
-            top: 5%;
-            z-index: 2;
+            top: 5%; // z-index: 2;
         }
         &--players::before {
             content: "";
@@ -185,8 +183,7 @@ body {
             background-position: center left;
             background-size: 991px 815px;
             top: -19%;
-            left: 40%;
-            z-index: 2;
+            left: 30%; // z-index: 2;
         }
     }
 }
@@ -204,7 +201,7 @@ body {
     }
     &__row3 {
         background-color: #5e42b0;
-        &--invert{
+        &--invert {
             background-color: $dark-indigo;
         }
     }
@@ -249,6 +246,7 @@ body {
         color: $pinkish-grey;
         padding-top: 64px;
         padding-left: 80px;
+        max-width: (660px - 25px) / $container * 100%;
     }
     &__description {
         width: 50%;
@@ -264,10 +262,54 @@ body {
         margin-top: 31px;
         padding-bottom: 60px;
         padding-left: 45px;
+        max-width: 660px / $container * 100%;
         &--invert {
             color: $white;
             padding-bottom: 102px;
         }
+    }
+}
+
+.gallery {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    div:nth-child(1) {
+        order: 1;
+    }
+    div:nth-child(2) {
+        order: 1;
+    }
+    div:nth-child(3) {
+        order: 3;
+    }
+    div:nth-child(4) {
+        order: 2;
+    }
+    div:nth-child(5) {
+        order: 3;
+    }
+    div:nth-child(6) {
+        order: 3;
+    }
+}
+
+.foto {
+    width: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    &__description {
+        width: 50%;
+    }
+    &--one {
+        background-image: url(../img/beactive_960x730.png);
+    }
+    &--two {
+        background-image: url(../img/findcontact_960x730.png);
+    }
+    &--three {
+        background-image: url(../img/workit_960x730.png);
     }
 }
 
