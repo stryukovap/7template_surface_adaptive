@@ -64,7 +64,7 @@ body {
     font-stretch: normal;
     letter-spacing: 4.5px;
     position: relative;
-    &::before{
+    &::before {
         position: absolute;
         content: "";
         width: 254px;
@@ -79,12 +79,14 @@ body {
     &__part1 {
         text-align: left;
         line-height: 0.35;
+        position: relative;
+        z-index: 1;
     }
     &__part2 {
         margin-top: 29px;
         text-align: right;
-        line-height: 1.11;;
-
+        line-height: 1.11;
+        ;
     }
 }
 
@@ -172,7 +174,7 @@ body {
 .features {
     font-family: "Proxima Nova", Arial, sans-serif;
     &__card {
-        position: relative; // overflow: hidden;
+        position: relative;
         &--athlets::before {
             content: "";
             width: 50%;
@@ -258,8 +260,84 @@ body {
         text-align: left;
         color: $pinkish-grey;
         padding-top: 64px;
-        padding-left: 80px;
-        max-width: (660px - 25px) / $container * 100%;
+        padding-left: 45px;
+        max-width: (660px - 0px) / $container * 100%;
+        &--one {
+            &::before {
+                content: "01";
+                height: 100%;
+                font-size: 18px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.35;
+                letter-spacing: 0.9px;
+                text-align: center;
+                color: $black-four;
+                border-bottom: 5px solid $bluey-purple;
+                border-radius: 2px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
+            }
+        }
+        &--two {
+            &::before {
+                content: "02";
+                height: 100%;
+                font-size: 18px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.35;
+                letter-spacing: 0.9px;
+                text-align: center;
+                color: $black-four;
+                border-bottom: 5px solid $bluey-purple;
+                border-radius: 2px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
+            }
+        }
+        &--three {
+            &::before {
+                content: "03";
+                height: 100%;
+                font-size: 18px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.35;
+                letter-spacing: 0.9px;
+                text-align: center;
+                color: $black-four;
+                border-bottom: 5px solid $white-three;
+                border-radius: 2px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
+            }
+        }
+        &--threeinvert {
+            &::before {
+                content: "03";
+                height: 100%;
+                font-size: 18px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.35;
+                letter-spacing: 0.9px;
+                text-align: center;
+                color: $perrywinkle;
+                border-bottom: 5px solid $white-three;
+                border-radius: 2px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
+            }
+        }
     }
     &__description {
         width: 50%;
@@ -292,9 +370,39 @@ body {
     &__wrap {
         display: flex;
         justify-content: space-between;
+        position: relative;
+        &::after{
+            content: "";
+            position: absolute;
+            width: 168px;
+            height: 155px;
+            background-color: $bluey-purple;
+            top: 50%;
+            left: 50%;
+            display: block;
+        }
         &:nth-child(2n) {
             display: flex;
             flex-direction: row-reverse;
+        }
+        &:nth-child(1) {
+            position: relative;
+            &::before {
+                content: "01";
+                font-size: 24px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.44;
+                letter-spacing: 1.2px;
+                text-align: center;
+                color: $pale-grey;
+                border-bottom: 5px solid rgba(255, 255, 255, 0.3);
+                border-radius: 2px;
+                display: block;
+                position: absolute;
+
+            }
         }
     }
     &__description {
