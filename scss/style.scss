@@ -1,4 +1,4 @@
-$container:1560px;
+$container:1545px;
 $white: #ffffff;
 $black: #161616;
 $beige: #e3d5b8;
@@ -29,7 +29,7 @@ body {
 }
 
 .header {
-    font-family: "Proxima Nova", Arial, sans-serif;
+    // font-family: "Proxima Nova", Arial, sans-serif;
     color: $white;
     text-transform: uppercase;
     background-image: url(../img/headercover_1920x1082.jpg);
@@ -42,22 +42,22 @@ body {
 }
 
 .row {
-    font-family: "Proxima Nova", Arial, sans-serif;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 54px;
+    padding-top: 15px;
     &__text {
+        font-family: "Proxima Nova-Regular", Arial, sans-serif;
         font-size: 14px;
         font-weight: 300;
-        line-height: 34.49px;
+        line-height: 2.46;
         letter-spacing: 0.7px;
     }
 }
 
 .promo {
-    font-family: "Proxima Nova", Arial, sans-serif;
-    margin-top: 309px;
+    font-family: "Proxima Nova-Bold", Arial, sans-serif;
+    margin-top: 325px;
     font-size: 90px;
     font-weight: bold;
     font-style: normal;
@@ -73,7 +73,7 @@ body {
         background-repeat: no-repeat;
         background-image: url(../img/art_header_254x317.png);
         background-position: center center;
-        left: 27%;
+        left: 26%;
         top: -72%;
     }
     &__part1 {
@@ -91,9 +91,9 @@ body {
 }
 
 .main-nav {
-    font-family: "Proxima Nova", Arial, sans-serif;
     &__list {
         margin: 0;
+        padding: 0;
         display: flex;
         justify-content: flex-end;
         align-items: center;
@@ -101,12 +101,13 @@ body {
     &__item {
         margin: 0;
         list-style: none;
-        margin-right: 50px;
+        margin-right: 45px;
         &:last-child {
-            margin-right: 0;
+            margin-right: 10px;
         }
     }
     &__link {
+        font-family: "Proxima Nova-Regular", Arial, sans-serif;
         color: $purpley-two;
         text-decoration: none;
         font-size: 14px;
@@ -115,6 +116,7 @@ body {
         font-stretch: normal;
         line-height: 2.46;
         letter-spacing: 0.7px;
+        // letter-spacing: normal;        
         text-align: left;
         &:hover {
             color: $white;
@@ -125,8 +127,8 @@ body {
 .download {
     display: flex;
     justify-content: center;
-    padding-bottom: 110px;
-    margin-top: 181px;
+    padding-bottom: 100px;
+    margin-top: 165px;
     &__link {
         margin-right: 50px;
         &:last-child {
@@ -136,7 +138,7 @@ body {
 }
 
 .button-link {
-    font-family: "Proxima Nova", Arial, sans-serif;
+    font-family: "Proxima Nova-Light", Arial, sans-serif;
     font-size: 14px;
     font-weight: 300;
     font-style: normal;
@@ -145,8 +147,8 @@ body {
     letter-spacing: 0.7px;
     text-align: left;
     color: $white;
-    padding: 26px 67px 25px 43px;
-    border-radius: 24px;
+    padding: 21px 98px 19px 47px;
+    border-radius: 40px;
     background-color: $bluey-purple;
     box-shadow: 0px 16px 24px 0 $dark-indigo;
     display: flex;
@@ -167,12 +169,13 @@ body {
     }
     &__part2 {
         display: block;
+        font-family: "Proxima Nova-Bold", Arial, sans-serif;
         font-weight: 600;
     }
 }
 
 .features {
-    font-family: "Proxima Nova", Arial, sans-serif;
+    // font-family: "Proxima Nova", Arial, sans-serif;
     &__card {
         position: relative;
         &--athlets::before {
@@ -204,7 +207,7 @@ body {
 }
 
 .card {
-    font-family: "Proxima Nova", Arial, sans-serif;
+    // font-family: "Proxima Nova-Bold", Arial, sans-serif;
     &__row0 {
         background-color: $white;
     }
@@ -229,6 +232,7 @@ body {
         }
     }
     &__title {
+        font-family: "Proxima Nova-Bold", Arial, sans-serif;
         width: 50%;
         margin: 0;
         text-transform: uppercase;
@@ -246,8 +250,9 @@ body {
 }
 
 .row {
-    font-family: "Proxima Nova", Arial, sans-serif;
+    
     &__title {
+        font-family: "Proxima Nova-Bold", Arial, sans-serif;
         width: 50%;
         margin: 0;
         text-transform: uppercase;
@@ -340,13 +345,14 @@ body {
         }
     }
     &__description {
+        font-family: "Proxima Nova-Regular", Arial, sans-serif;
         width: 50%;
         margin: 0;
         font-size: 20px;
         font-weight: normal;
         font-style: normal;
         font-stretch: normal;
-        line-height: 1.4;
+        line-height: normal;
         letter-spacing: 1px;
         text-align: left;
         color: $black-four;
@@ -377,7 +383,7 @@ body {
             width: 168px;
             height: 155px;
             background-color: $bluey-purple;
-            top: 50%;
+            top: 40%;
             left: 50%;
             display: block;
             margin: -84px;
@@ -404,7 +410,7 @@ body {
                 display: block;
                 position: absolute;
                 z-index: 2;
-                top: 50%;
+                top: 40%;
                 left: 50%;
                 margin: -26px -12.5px;
             }
@@ -426,7 +432,7 @@ body {
                 display: block;
                 position: absolute;
                 z-index: 2;
-                top: 50%;
+                top: 40%;
                 left: 50%;
                 margin: -26px -12.5px;
             }
@@ -448,7 +454,7 @@ body {
                 display: block;
                 position: absolute;
                 z-index: 2;
-                top: 50%;
+                top: 40%;
                 left: 50%;
                 margin: -26px -12.5px;
             }
@@ -482,7 +488,8 @@ body {
         text-align: left;
         color: $pinkish-grey-40;
         margin-top: 257px;
-        padding-left: 125px;
+        padding-left: 150px;
+        text-transform: uppercase;
     }
     &__text {
         font-family: "Proxima Nova", Arial, sans-serif;
@@ -498,7 +505,7 @@ body {
         margin-top: 119px;
         max-width: 500px;
         padding-bottom: 250px;
-        padding-left: 125px;
+        padding-left: 150px;
     }
 }
 
@@ -631,113 +638,112 @@ body {
 }
 
 // template 768, 768-1440px
-@media screen and (max-width:1440px) {
-    .row {
-        padding-top: 53px;
-    }
-    .promo {
-        margin-top: 194px;
-        font-size: 64px;
-        letter-spacing: 3.2px;
-        &__part1 {
-            line-height: 1;
-            margin-left: 89px;
-        }
-        &__part2 {
-            line-height: normal;
-            text-align: left;
-            margin-top: 33px;
-            margin-left: 197px;
-        }
-    }
-    .main-nav {
-        &__list {
-            justify-content: space-around;
-        }
-        &__item {
-            margin: 0;
-            margin-top: 184px;
-        }
-    }
-    .download {
-        padding-bottom: 91px;
-        margin-top: 116px;
-        &__link {
-            margin-right: 30px;
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-    }
-    .button-link {
-        box-shadow: 8px 13.9px 24px 0 $dark-indigo;
-    }
-}
-
-// template 320, 0-768px
-@media screen and (max-width:768px) {
-    .row {
-        justify-content: center;
-        padding-top: 39px;
-        &__text {
-            display: none;
-        }
-    }
-    .promo {
-        margin-top: 141px;
-        font-size: 32px;
-        letter-spacing: 1.6px;
-        &__part1 {
-            line-height: 1;
-            margin-left: 10px;
-        }
-        &__part2 {
-            line-height: normal;
-            text-align: left;
-            margin-top: 28px;
-            margin-left: 60px;
-        }
-    }
-    .header-wrapper-mobile {
-        display: flex;
-        justify-content: center;
-        flex-direction: column-reverse;
-    }
-    .main-nav {
-        &__list {
-            justify-content: center;
-            flex-wrap: wrap;
-            margin-top: 46px;
-            padding-bottom: 20px;
-        }
-        &__item {
-            margin: 0;
-            padding: 0;
-            margin-right: 25px; // &:last-child {
-            //     margin-right: 0;
-            // }
-        }
-    }
-    .download {
-        padding-bottom: 0;
-        margin-top: 118px;
-        &__link {
-            margin-right: 8px;
-            &:last-child {
-                margin-right: 0;
-            }
-        }
-    }
-    .button-link {
-        font-size: 8px;
-        letter-spacing: 0.4px;
-        padding: 11px 17px 10px 20px;
-        box-shadow: 0px 10px 16px 0 $dark-indigo;
-        &__icon {
-            font-size: 17px;
-        }
-        &__wrapper {
-            margin-left: 10px;
-        }
-    }
-}
+// @media screen and (max-width:1440px) {
+//     .row {
+//         padding-top: 53px;
+//     }
+//     .promo {
+//         margin-top: 194px;
+//         font-size: 64px;
+//         letter-spacing: 3.2px;
+//         &__part1 {
+//             line-height: 1;
+//             margin-left: 89px;
+//         }
+//         &__part2 {
+//             line-height: normal;
+//             text-align: left;
+//             margin-top: 33px;
+//             margin-left: 197px;
+//         }
+//     }
+//     .main-nav {
+//         &__list {
+//             justify-content: space-around;
+//         }
+//         &__item {
+//             margin: 0;
+//             margin-top: 184px;
+//         }
+//     }
+//     .download {
+//         padding-bottom: 91px;
+//         margin-top: 116px;
+//         &__link {
+//             margin-right: 30px;
+//             &:last-child {
+//                 margin-right: 0;
+//             }
+//         }
+//     }
+//     .button-link {
+//         box-shadow: 8px 13.9px 24px 0 $dark-indigo;
+//     }
+// }
+// // template 320, 0-768px
+// @media screen and (max-width:768px) {
+//     .row {
+//         justify-content: center;
+//         padding-top: 39px;
+//         &__text {
+//             display: none;
+//         }
+//     }
+//     .promo {
+//         margin-top: 141px;
+//         font-size: 32px;
+//         letter-spacing: 1.6px;
+//         &__part1 {
+//             line-height: 1;
+//             margin-left: 10px;
+//         }
+//         &__part2 {
+//             line-height: normal;
+//             text-align: left;
+//             margin-top: 28px;
+//             margin-left: 60px;
+//         }
+//     }
+//     .header-wrapper-mobile {
+//         display: flex;
+//         justify-content: center;
+//         flex-direction: column-reverse;
+//     }
+//     .main-nav {
+//         &__list {
+//             justify-content: center;
+//             flex-wrap: wrap;
+//             margin-top: 46px;
+//             padding-bottom: 20px;
+//         }
+//         &__item {
+//             margin: 0;
+//             padding: 0;
+//             margin-right: 25px; // &:last-child {
+//             //     margin-right: 0;
+//             // }
+//         }
+//     }
+//     .download {
+//         padding-bottom: 0;
+//         margin-top: 118px;
+//         &__link {
+//             margin-right: 8px;
+//             &:last-child {
+//                 margin-right: 0;
+//             }
+//         }
+//     }
+//     .button-link {
+//         font-size: 8px;
+//         letter-spacing: 0.4px;
+//         padding: 11px 17px 10px 20px;
+//         box-shadow: 0px 10px 16px 0 $dark-indigo;
+//         &__icon {
+//             font-size: 17px;
+//         }
+//         &__wrapper {
+//             margin-left: 10px;
+//         }
+//     }
+// }
