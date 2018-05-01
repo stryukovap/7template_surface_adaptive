@@ -1,0 +1,216 @@
+/* line 22, ../scss/style.scss */
+body {
+  margin: 0;
+}
+
+/* line 26, ../scss/style.scss */
+.card {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+/* line 30, ../scss/style.scss */
+.card__title {
+  width: 34.025974026%;
+  padding-right: 12.987012987%;
+  font-family: "Proxima Nova-Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 90px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.67;
+  letter-spacing: normal;
+  text-align: left;
+  color: #e7e7e7;
+  margin: 0;
+  margin-top: 112px;
+  margin-bottom: 30px;
+}
+/* line 46, ../scss/style.scss */
+.card__title--players {
+  padding-right: 0;
+  padding-left: 17.1428571429%;
+}
+/* line 51, ../scss/style.scss */
+.card--players {
+  align-items: flex-start;
+}
+
+/* line 56, ../scss/style.scss */
+.row {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  padding-right: 12.987012987%;
+}
+/* line 62, ../scss/style.scss */
+.row--players {
+  align-items: flex-start;
+  padding-right: 0;
+  padding-left: 17.1428571429%;
+}
+/* line 66, ../scss/style.scss */
+.row--players.row--three {
+  background-color: #090c35;
+}
+/* line 70, ../scss/style.scss */
+.row--one {
+  background-color: #ffffff;
+}
+/* line 73, ../scss/style.scss */
+.row--two {
+  background-color: rgba(94, 66, 176, 0.06);
+}
+/* line 76, ../scss/style.scss */
+.row--three {
+  background-color: #5e42b0;
+}
+/* line 79, ../scss/style.scss */
+.row__title {
+  width: 34.025974026%;
+  font-family: "Proxima Nova-Bold", Arial, sans-serif;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 0.96;
+  letter-spacing: 1.8px;
+  text-align: left;
+  color: #c1c1c1;
+  margin: 0;
+  margin-top: 65px;
+}
+/* line 94, ../scss/style.scss */
+.row__title--one::before {
+  content: "01";
+  height: 100%;
+  font-family: "Proxima Nova-Bold", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.35;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #000000;
+  border-bottom: 5px solid #5e42b0;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+/* line 114, ../scss/style.scss */
+.row__title--two::before {
+  content: "02";
+  height: 100%;
+  font-family: "Proxima Nova-Bold", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.35;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #000000;
+  border-bottom: 5px solid #5e42b0;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+/* line 134, ../scss/style.scss */
+.row__title--three::before {
+  content: "03";
+  height: 100%;
+  font-family: "Proxima Nova-Bold", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.35;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #000000;
+  border-bottom: 5px solid #efefef;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+/* line 154, ../scss/style.scss */
+.row__title--threeinvert::before {
+  content: "03";
+  height: 100%;
+  font-family: "Proxima Nova-Bold", Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.35;
+  letter-spacing: 0.9px;
+  text-align: center;
+  color: #8765dd;
+  border-bottom: 5px solid #efefef;
+  border-radius: 2px;
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 15px;
+}
+/* line 174, ../scss/style.scss */
+.row__description {
+  width: 34.025974026%;
+  font-family: "Proxima Nova-Regular", Arial, sans-serif;
+  font-size: 20px;
+  font-weight: normal;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: normal;
+  letter-spacing: 1px;
+  text-align: left;
+  color: #000000;
+  margin: 0;
+  margin-top: 31px;
+  margin-bottom: 60px;
+}
+/* line 188, ../scss/style.scss */
+.row__description--three {
+  color: #ffffff;
+}
+
+@media screen and (max-width: 1440px) {
+  /* line 197, ../scss/style.scss */
+  .card__title {
+    width: 55.3385416667%;
+    padding-right: 7.2916666667%;
+    margin-top: 82px;
+    margin-bottom: 20px;
+  }
+  /* line 202, ../scss/style.scss */
+  .card__title--players {
+    padding-left: 5.2083333333%;
+  }
+
+  /* line 207, ../scss/style.scss */
+  .row {
+    padding-right: 7.2916666667%;
+  }
+  /* line 209, ../scss/style.scss */
+  .row--players {
+    padding-left: 5.2083333333%;
+  }
+  /* line 212, ../scss/style.scss */
+  .row__title {
+    margin-top: 40px;
+    width: 55.3385416667%;
+  }
+  /* line 216, ../scss/style.scss */
+  .row__description {
+    width: 55.3385416667%;
+    font-size: 18px;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */

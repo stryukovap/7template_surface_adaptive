@@ -1,0 +1,221 @@
+$container:1545px;
+$white: #ffffff;
+$black: #161616;
+$beige: #e3d5b8;
+$faded-red: #d03958;
+$black-two: #1f1f1f;
+$black-three: #1b1b1b;
+$greyish: #b5b5b5;
+$dark-indigo: #0a0e34;
+$rosy-pink: #f26163;
+$bluey-purple: #5e42b0;
+$purpley: #9172e6;
+$black-four: #000000;
+$pinkish-grey-40: rgba(193, 193, 193, 0.4);
+$white-two: #e7e7e7;
+$wisteria: #a496ca;
+$pinkish-grey: #c1c1c1;
+$purpley-two: #9071ea;
+$pale-grey: #f5f6f7;
+$perrywinkle: #9173e6;
+$white-three: #efefef;
+body {
+    margin: 0;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    &__title {
+        width: 655px/1925px*100%;
+        padding-right: 250px/1925px*100%;
+        font-family: "Proxima Nova-Bold", Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: 90px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.67;
+        letter-spacing: normal;
+        text-align: left;
+        color: $white-two;
+        margin: 0;
+        margin-top: 112px;
+        margin-bottom: 30px;
+        &--players {
+            padding-right: 0;
+            padding-left: 330px/1925px*100%;
+        }
+    }
+    &--players {
+        align-items: flex-start;
+    }
+}
+
+.row {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding-right: 250px/1925px*100%;
+    &--players {
+        align-items: flex-start;
+        padding-right: 0;
+        padding-left: 330px/1925px*100%;
+        &.row--three {
+            background-color: #090c35;
+        }
+    }
+    &--one {
+        background-color: $white;
+    }
+    &--two {
+        background-color: rgba(94, 66, 176, 0.06);
+    }
+    &--three {
+        background-color: rgb(94, 66, 176);
+    }
+    &__title {
+        width: 655px/1925px*100%;
+        font-family: "Proxima Nova-Bold", Arial, sans-serif;
+        text-transform: uppercase;
+        font-size: 36px;
+        font-weight: bold;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: 0.96;
+        letter-spacing: 1.8px;
+        text-align: left;
+        color: $pinkish-grey;
+        margin: 0;
+        margin-top: 65px;
+        &--one {
+            &::before {
+                content: "01";
+                height: 100%;
+                font-family: "Proxima Nova-Bold", Arial, sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.35;
+                letter-spacing: 0.9px;
+                text-align: center;
+                color: $black-four;
+                border-bottom: 5px solid $bluey-purple;
+                border-radius: 2px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
+            }
+        }
+        &--two {
+            &::before {
+                content: "02";
+                height: 100%;
+                font-family: "Proxima Nova-Bold", Arial, sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.35;
+                letter-spacing: 0.9px;
+                text-align: center;
+                color: $black-four;
+                border-bottom: 5px solid $bluey-purple;
+                border-radius: 2px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
+            }
+        }
+        &--three {
+            &::before {
+                content: "03";
+                height: 100%;
+                font-family: "Proxima Nova-Bold", Arial, sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.35;
+                letter-spacing: 0.9px;
+                text-align: center;
+                color: $black-four;
+                border-bottom: 5px solid $white-three;
+                border-radius: 2px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
+            }
+        }
+        &--threeinvert {
+            &::before {
+                content: "03";
+                height: 100%;
+                font-family: "Proxima Nova-Bold", Arial, sans-serif;
+                font-size: 18px;
+                font-weight: bold;
+                font-style: normal;
+                font-stretch: normal;
+                line-height: 1.35;
+                letter-spacing: 0.9px;
+                text-align: center;
+                color: #8765dd;
+                border-bottom: 5px solid $white-three;
+                border-radius: 2px;
+                display: inline-block;
+                vertical-align: top;
+                margin-right: 15px;
+            }
+        }
+    }
+    &__description {
+        width: 655px/1925px*100%;
+        font-family: "Proxima Nova-Regular", Arial, sans-serif;
+        font-size: 20px;
+        font-weight: normal;
+        font-style: normal;
+        font-stretch: normal;
+        line-height: normal;
+        letter-spacing: 1px;
+        text-align: left;
+        color: $black-four;
+        margin: 0;
+        margin-top: 31px;
+        margin-bottom: 60px;
+        &--three {
+            color: $white;
+        }
+    }
+}
+
+// template 768, 768-1440px
+@media screen and (max-width:1440px) {
+    .card {
+        &__title {
+            width: 425px/768px*100%;
+            padding-right: 56px/768px*100%;
+            margin-top: 82px;
+            margin-bottom: 20px;
+            &--players {
+                padding-left: 40px/768px*100%;
+            }
+        }
+    }
+    .row {
+        padding-right: 56px/768px*100%;
+        &--players {
+            padding-left: 40px/768px*100%;
+        }
+        &__title {
+            margin-top: 40px;
+            width: 425px/768px*100%;
+        }
+        &__description {
+            width: 425px/768px*100%;
+            font-size: 18px;
+        }
+    }
+}
