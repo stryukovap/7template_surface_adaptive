@@ -50,7 +50,6 @@ body {
 .row--players {
   align-items: flex-start;
   padding-right: 0;
-  padding-left: 17.1428571429%;
 }
 /* line 67, ../scss/style.scss */
 .row--players.row--three {
@@ -84,7 +83,11 @@ body {
   margin: 0;
   margin-top: 65px;
 }
-/* line 95, ../scss/style.scss */
+/* line 94, ../scss/style.scss */
+.row__title--players {
+  padding-left: 17.1428571429%;
+}
+/* line 98, ../scss/style.scss */
 .row__title--one::before {
   content: "01";
   height: 100%;
@@ -103,7 +106,7 @@ body {
   vertical-align: top;
   margin-right: 15px;
 }
-/* line 115, ../scss/style.scss */
+/* line 118, ../scss/style.scss */
 .row__title--two::before {
   content: "02";
   height: 100%;
@@ -122,7 +125,7 @@ body {
   vertical-align: top;
   margin-right: 15px;
 }
-/* line 135, ../scss/style.scss */
+/* line 138, ../scss/style.scss */
 .row__title--three::before {
   content: "03";
   height: 100%;
@@ -141,7 +144,7 @@ body {
   vertical-align: top;
   margin-right: 15px;
 }
-/* line 155, ../scss/style.scss */
+/* line 158, ../scss/style.scss */
 .row__title--threeinvert::before {
   content: "03";
   height: 100%;
@@ -160,7 +163,7 @@ body {
   vertical-align: top;
   margin-right: 15px;
 }
-/* line 175, ../scss/style.scss */
+/* line 178, ../scss/style.scss */
 .row__description {
   width: 34.025974026%;
   font-family: "Proxima Nova-Regular", Arial, sans-serif;
@@ -176,49 +179,106 @@ body {
   margin-top: 31px;
   margin-bottom: 60px;
 }
-/* line 189, ../scss/style.scss */
+/* line 192, ../scss/style.scss */
 .row__description--three {
   color: #ffffff;
 }
+/* line 195, ../scss/style.scss */
+.row__description--players {
+  padding-left: 17.1428571429%;
+}
+
+/* line 201, ../scss/style.scss */
+.slider__controls {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: none;
+}
+
+/* line 212, ../scss/style.scss */
+.radio {
+  display: none;
+}
+/* line 214, ../scss/style.scss */
+.radio__label {
+  font-size: 0;
+  display: none;
+}
+/* line 218, ../scss/style.scss */
+.radio__row {
+  display: none;
+}
+/* line 220, ../scss/style.scss */
+.radio__row:checked + .radio__label::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: green;
+  background-size: 10px 10px;
+  border-radius: 50%;
+  display: block;
+  margin-left: 12px;
+}
+/* line 231, ../scss/style.scss */
+.radio__label {
+  display: none;
+}
+/* line 233, ../scss/style.scss */
+.radio__label:hover {
+  cursor: pointer;
+}
+/* line 236, ../scss/style.scss */
+.radio__label::before {
+  content: "";
+  width: 10px;
+  height: 10px;
+  background-color: red;
+  background-size: 10px 10px;
+  border-radius: 50%;
+  display: block;
+  margin-left: 12px;
+}
 
 @media screen and (max-width: 1440px) {
-  /* line 246, ../scss/style.scss */
+  /* line 252, ../scss/style.scss */
   .card__title {
     width: 55.3385416667%;
     padding-right: 7.2916666667%;
     margin-top: 82px;
     margin-bottom: 20px;
   }
-  /* line 251, ../scss/style.scss */
+  /* line 257, ../scss/style.scss */
   .card__title--players {
     padding-left: 5.2083333333%;
   }
 
-  /* line 256, ../scss/style.scss */
-  .row {
-    padding-right: 7.2916666667%;
-  }
-  /* line 258, ../scss/style.scss */
+  /* line 263, ../scss/style.scss */
   .row--players {
     padding-left: 5.2083333333%;
   }
-  /* line 261, ../scss/style.scss */
+  /* line 266, ../scss/style.scss */
   .row__title {
     margin-top: 40px;
     width: 55.3385416667%;
+    padding-right: 7.2916666667%;
   }
-  /* line 265, ../scss/style.scss */
+  /* line 271, ../scss/style.scss */
   .row__description {
     width: 55.3385416667%;
+    padding-right: 7.2916666667%;
     font-size: 18px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 280, ../scss/style.scss */
+  /* line 281, ../scss/style.scss */
   .row--one {
     display: none;
   }
-  /* line 283, ../scss/style.scss */
+  /* line 284, ../scss/style.scss */
   .row--three {
     display: none;
   }

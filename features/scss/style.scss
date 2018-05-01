@@ -63,7 +63,7 @@ body {
     &--players {
         align-items: flex-start;
         padding-right: 0;
-        padding-left: 330px/1925px*100%;
+        
         &.row--three {
             background-color: #090c35;
         }
@@ -91,6 +91,9 @@ body {
         color: $pinkish-grey;
         margin: 0;
         margin-top: 65px;
+        &--players{
+        padding-left: 330px/1925px*100%;            
+        }
         &--one {
             &::before {
                 content: "01";
@@ -189,58 +192,61 @@ body {
         &--three {
             color: $white;
         }
+        &--players{
+            padding-left: 330px/1925px*100%;            
+            }
     }
 }
 
-// .slider__controls {
-//     // width: 100%;
-//     display: flex;
-//     justify-content: center;
-//     align-items: center;
-//     position: absolute;
-//     top: 50%;
-//     left: 50%;
-//     display: none;//320
-// }
+.slider__controls {
+    // width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    display: none;//320
+}
 
-// .radio {
-//     display: none;
-//     &__label {
-//         font-size: 0;
-//         display: none;//320
-//     }
-//     &__row {
-//         display: none;//320
-//         &:checked+.radio__label::before {
-//             content: "";
-//             width: 10px;
-//             height: 10px;
-//             background-color: green;
-//             background-size: 10px 10px;
-//             border-radius: 50%;
-//             display: block;
-//             margin-left: 12px;
-//         }
-//     }
-//     &__label {
-//         display: none;//320
-//         &:hover {
-//             cursor: pointer;
-//         }
-//         &::before {
-//             content: "";
-//             width: 10px;
-//             height: 10px;
-//             background-color: red;
-//             background-size: 10px 10px;
-//             border-radius: 50%;
-//             display: block;
-//             margin-left: 12px;
-//         }
-//     }
-// }
+.radio {
+    display: none;
+    &__label {
+        font-size: 0;
+        display: none;//320
+    }
+    &__row {
+        display: none;//320
+        &:checked+.radio__label::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: green;
+            background-size: 10px 10px;
+            border-radius: 50%;
+            display: block;
+            margin-left: 12px;
+        }
+    }
+    &__label {
+        display: none;//320
+        &:hover {
+            cursor: pointer;
+        }
+        &::before {
+            content: "";
+            width: 10px;
+            height: 10px;
+            background-color: red;
+            background-size: 10px 10px;
+            border-radius: 50%;
+            display: block;
+            margin-left: 12px;
+        }
+    }
+}
 
-// template 768, 768-1440px
+//template 768, 768-1440px
 @media screen and (max-width:1440px) {
     .card {
         &__title {
@@ -254,28 +260,23 @@ body {
         }
     }
     .row {
-        padding-right: 56px/768px*100%;
         &--players {
             padding-left: 40px/768px*100%;
         }
         &__title {
             margin-top: 40px;
             width: 425px/768px*100%;
+            padding-right: 56px/768px*100%;
         }
         &__description {
             width: 425px/768px*100%;
+            padding-right: 56px/768px*100%;
             font-size: 18px;
         }
     }
 }
 
 @media screen and (max-width:767px) {
-    // .radio {
-    //     display: block;
-    // }
-    // .slider__controls {
-    //     display: block;
-    // }
     .row {
         &--one {
             display: none;
