@@ -189,6 +189,7 @@ body {
             background-position: center right;
             background-size: 678px 950px;
             top: 5%;
+            left: 2%;
         }
         &--players::before {
             content: "";
@@ -233,7 +234,7 @@ body {
     }
     &__title {
         font-family: "Proxima Nova-Bold", Arial, sans-serif;
-        width: 50%;
+        width: 47%;
         margin: 0;
         text-transform: uppercase;
         font-size: 90px;
@@ -244,7 +245,7 @@ body {
         letter-spacing: normal;
         text-align: left;
         color: $white-two;
-        margin-top: 112px;
+        margin-top: 117px;
         padding-left: 45px;
     }
 }
@@ -264,10 +265,12 @@ body {
         letter-spacing: 1.8px;
         text-align: left;
         color: $pinkish-grey;
-        padding-top: 64px;
+        // padding-top: 90px;
         padding-left: 45px;
-        max-width: (660px - 0px) / $container * 100%;
+        max-width: 46.718447%;
+        // max-width: (660px - 0px) / $container * 100%;
         &--one {
+            padding-top: 90px;
             &::before {
                 content: "01";
                 height: 100%;
@@ -287,6 +290,7 @@ body {
             }
         }
         &--two {
+            padding-top: 90px;
             &::before {
                 content: "02";
                 height: 100%;
@@ -306,6 +310,7 @@ body {
             }
         }
         &--three {
+            padding-top: 90px;
             &::before {
                 content: "03";
                 height: 100%;
@@ -356,10 +361,11 @@ body {
         letter-spacing: 1px;
         text-align: left;
         color: $black-four;
-        margin-top: 31px;
+        margin-top: 23px;
         padding-bottom: 60px;
         padding-left: 45px;
-        max-width: 660px / $container * 100%;
+        max-width: 46.718447%;
+        // max-width: 660px / $container * 100%;
         &--invert {
             color: $white;
             padding-bottom: 102px;
