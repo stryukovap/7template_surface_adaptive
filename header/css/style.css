@@ -1,0 +1,175 @@
+/* line 22, ../scss/style.scss */
+.container {
+  max-width: 1545px;
+  margin: 0 auto;
+}
+
+/* line 27, ../scss/style.scss */
+body {
+  margin: 0;
+}
+
+/* line 31, ../scss/style.scss */
+.header {
+  color: #ffffff;
+  text-transform: uppercase;
+  background-image: url(../../img/headercover_1920x1082.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+}
+/* line 39, ../scss/style.scss */
+.header__wrapper {
+  background-color: rgba(10, 14, 52, 0.9);
+}
+
+/* line 44, ../scss/style.scss */
+.row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 15px;
+}
+/* line 49, ../scss/style.scss */
+.row__text {
+  font-family: "Proxima Nova-Regular", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 2.46;
+  letter-spacing: 0.7px;
+}
+
+/* line 58, ../scss/style.scss */
+.promo {
+  font-family: "Proxima Nova-Bold", Arial, sans-serif;
+  margin-top: 325px;
+  font-size: 90px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  letter-spacing: 4.5px;
+  position: relative;
+}
+/* line 67, ../scss/style.scss */
+.promo::before {
+  position: absolute;
+  content: "";
+  width: 254px;
+  height: 317px;
+  display: block;
+  background-repeat: no-repeat;
+  background-image: url(../../img/art_header_254x317.png);
+  background-position: center center;
+  left: 26%;
+  top: -72%;
+}
+/* line 79, ../scss/style.scss */
+.promo__part1 {
+  text-align: left;
+  line-height: 0.35;
+  position: relative;
+  z-index: 1;
+}
+/* line 85, ../scss/style.scss */
+.promo__part2 {
+  margin-top: 29px;
+  text-align: right;
+  line-height: 1.11;
+}
+
+/* line 94, ../scss/style.scss */
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+/* line 101, ../scss/style.scss */
+.main-nav__item {
+  margin: 0;
+  list-style: none;
+  margin-right: 45px;
+}
+/* line 105, ../scss/style.scss */
+.main-nav__item:last-child {
+  margin-right: 10px;
+}
+/* line 109, ../scss/style.scss */
+.main-nav__link {
+  font-family: "Proxima Nova-Regular", Arial, sans-serif;
+  color: #9071ea;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 2.46;
+  letter-spacing: 0.7px;
+  text-align: left;
+}
+/* line 121, ../scss/style.scss */
+.main-nav__link:hover {
+  color: #ffffff;
+}
+
+/* line 127, ../scss/style.scss */
+.download {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+  margin-top: 165px;
+}
+/* line 132, ../scss/style.scss */
+.download__link {
+  margin-right: 50px;
+}
+/* line 134, ../scss/style.scss */
+.download__link:last-child {
+  margin-right: 0;
+}
+
+/* line 140, ../scss/style.scss */
+.button-link {
+  font-family: "Proxima Nova-Light", Arial, sans-serif;
+  font-size: 14px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: 0.7px;
+  text-align: left;
+  color: #ffffff;
+  padding: 21px 98px 19px 47px;
+  border-radius: 40px;
+  background-color: #5e42b0;
+  box-shadow: 0px 16px 24px 0 #0a0e34;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-decoration: none;
+}
+/* line 158, ../scss/style.scss */
+.button-link:hover {
+  color: #0a0e34;
+}
+/* line 161, ../scss/style.scss */
+.button-link__icon {
+  font-size: 38px;
+}
+/* line 164, ../scss/style.scss */
+.button-link__wrapper {
+  margin-left: 26px;
+}
+/* line 167, ../scss/style.scss */
+.button-link__part1 {
+  display: block;
+}
+/* line 170, ../scss/style.scss */
+.button-link__part2 {
+  display: block;
+  font-family: "Proxima Nova-Bold", Arial, sans-serif;
+  font-weight: 600;
+}
+
+/*# sourceMappingURL=style.css.map */
