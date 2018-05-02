@@ -61,16 +61,15 @@ body {
 .promo::before {
   position: absolute;
   content: "";
-  width: 254px;
-  height: 317px;
+  width: 8px;
+  height: 406px;
+  transform: rotate(35deg);
   display: block;
-  background-repeat: no-repeat;
-  background-image: url(../../img/art_header_254x317.png);
-  background-position: center center;
-  left: 26%;
-  top: -72%;
+  background-color: #5d40ad;
+  left: 33%;
+  top: -100%;
 }
-/* line 64, ../scss/style.scss */
+/* line 63, ../scss/style.scss */
 .promo__part1 {
   text-align: left;
   line-height: 0.35;
@@ -78,7 +77,7 @@ body {
   z-index: 1;
   margin-left: 15px;
 }
-/* line 71, ../scss/style.scss */
+/* line 70, ../scss/style.scss */
 .promo__part2 {
   margin-top: 29px;
   text-align: right;
@@ -86,7 +85,7 @@ body {
   margin-right: 15px;
 }
 
-/* line 80, ../scss/style.scss */
+/* line 79, ../scss/style.scss */
 .main-nav__list {
   margin: 0;
   padding: 0;
@@ -94,17 +93,17 @@ body {
   justify-content: flex-end;
   align-items: center;
 }
-/* line 87, ../scss/style.scss */
+/* line 86, ../scss/style.scss */
 .main-nav__item {
   margin: 0;
   list-style: none;
   margin-right: 45px;
 }
-/* line 91, ../scss/style.scss */
+/* line 90, ../scss/style.scss */
 .main-nav__item:last-child {
   margin-right: 15px;
 }
-/* line 95, ../scss/style.scss */
+/* line 94, ../scss/style.scss */
 .main-nav__link {
   font-family: "Proxima Nova-Regular", Arial, sans-serif;
   color: #9071ea;
@@ -117,28 +116,28 @@ body {
   letter-spacing: 0.7px;
   text-align: left;
 }
-/* line 106, ../scss/style.scss */
+/* line 105, ../scss/style.scss */
 .main-nav__link:hover {
   color: #ffffff;
 }
 
-/* line 112, ../scss/style.scss */
+/* line 111, ../scss/style.scss */
 .download {
   display: flex;
   justify-content: center;
   padding-bottom: 100px;
   margin-top: 165px;
 }
-/* line 117, ../scss/style.scss */
+/* line 116, ../scss/style.scss */
 .download__link {
   margin-right: 50px;
 }
-/* line 119, ../scss/style.scss */
+/* line 118, ../scss/style.scss */
 .download__link:last-child {
   margin-right: 0;
 }
 
-/* line 125, ../scss/style.scss */
+/* line 124, ../scss/style.scss */
 .button-link {
   font-family: "Proxima Nova-Light", Arial, sans-serif;
   font-size: 14px;
@@ -158,23 +157,23 @@ body {
   align-items: center;
   text-decoration: none;
 }
-/* line 143, ../scss/style.scss */
+/* line 142, ../scss/style.scss */
 .button-link:hover {
   color: #0a0e34;
 }
-/* line 146, ../scss/style.scss */
+/* line 145, ../scss/style.scss */
 .button-link__icon {
   font-size: 38px;
 }
-/* line 149, ../scss/style.scss */
+/* line 148, ../scss/style.scss */
 .button-link__wrapper {
   margin-left: 26px;
 }
-/* line 152, ../scss/style.scss */
+/* line 151, ../scss/style.scss */
 .button-link__part1 {
   display: block;
 }
-/* line 155, ../scss/style.scss */
+/* line 154, ../scss/style.scss */
 .button-link__part2 {
   display: block;
   font-family: "Proxima Nova-Bold", Arial, sans-serif;
@@ -182,12 +181,12 @@ body {
 }
 
 @media screen and (max-width: 1140px) {
-  /* line 163, ../scss/style.scss */
+  /* line 162, ../scss/style.scss */
   .row {
     padding-top: 53px;
   }
 
-  /* line 166, ../scss/style.scss */
+  /* line 165, ../scss/style.scss */
   .promo {
     font-size: 64px;
     font-weight: bold;
@@ -196,70 +195,80 @@ body {
     letter-spacing: 3.2px;
     margin-top: 194px;
   }
-  /* line 173, ../scss/style.scss */
+  /* line 172, ../scss/style.scss */
   .promo__part1 {
     margin-left: 89px;
     line-height: 0.49;
   }
-  /* line 177, ../scss/style.scss */
+  /* line 176, ../scss/style.scss */
   .promo__part2 {
+    position: relative;
     text-align: left;
     line-height: normal;
     margin-left: 197px;
     margin-right: 0;
+    z-index: 1;
+  }
+  /* line 184, ../scss/style.scss */
+  .promo::before {
+    position: absolute;
+    content: "";
+    left: 50%;
+    top: -50%;
+    z-index: 0;
   }
 
-  /* line 184, ../scss/style.scss */
+  /* line 192, ../scss/style.scss */
   .main-nav {
     margin-top: 180px;
   }
-  /* line 186, ../scss/style.scss */
+  /* line 194, ../scss/style.scss */
   .main-nav__list {
     justify-content: space-around;
   }
-  /* line 189, ../scss/style.scss */
+  /* line 197, ../scss/style.scss */
   .main-nav__item {
     margin-right: 25px;
     margin-left: 25px;
   }
-  /* line 193, ../scss/style.scss */
+  /* line 201, ../scss/style.scss */
   .main-nav__link {
     font-size: 16px;
     line-height: 2.16;
     letter-spacing: 0.8px;
   }
 
-  /* line 199, ../scss/style.scss */
+  /* line 207, ../scss/style.scss */
   .download {
     margin-top: 115px;
     padding-bottom: 91px;
   }
-  /* line 202, ../scss/style.scss */
+  /* line 210, ../scss/style.scss */
   .download__link {
     margin-right: 30px;
   }
-  /* line 204, ../scss/style.scss */
+  /* line 212, ../scss/style.scss */
   .download__link:last-child {
     margin-right: 0;
   }
 
-  /* line 209, ../scss/style.scss */
+  /* line 217, ../scss/style.scss */
   .button-link {
     box-shadow: 8px 13.9px 24px 0 #0a0e34;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 215, ../scss/style.scss */
+  /* line 223, ../scss/style.scss */
   .row {
     justify-content: center;
     padding-top: 39px;
   }
-  /* line 218, ../scss/style.scss */
+  /* line 226, ../scss/style.scss */
   .row__text {
     display: none;
   }
 
-  /* line 222, ../scss/style.scss */
+  /* line 230, ../scss/style.scss */
   .promo {
     margin-top: 141px;
     font-size: 32px;
@@ -267,13 +276,13 @@ body {
     font-style: normal;
     font-stretch: normal;
   }
-  /* line 228, ../scss/style.scss */
+  /* line 236, ../scss/style.scss */
   .promo__part1 {
     margin-left: 10px;
     line-height: 0.98;
     letter-spacing: 1.6px;
   }
-  /* line 233, ../scss/style.scss */
+  /* line 241, ../scss/style.scss */
   .promo__part2 {
     margin-top: 28px;
     margin-left: 65px;
@@ -281,23 +290,33 @@ body {
     line-height: normal;
     letter-spacing: 1.6px;
   }
+  /* line 248, ../scss/style.scss */
+  .promo::before {
+    position: absolute;
+    content: "";
+    width: 4px;
+    height: 227px;
+    left: 50%;
+    top: -42%;
+    z-index: 0;
+  }
 
-  /* line 241, ../scss/style.scss */
+  /* line 258, ../scss/style.scss */
   .main-nav {
     margin-top: 45px;
     padding-bottom: 20px;
   }
-  /* line 244, ../scss/style.scss */
+  /* line 261, ../scss/style.scss */
   .main-nav__list {
     justify-content: space-around;
     flex-wrap: wrap;
   }
-  /* line 248, ../scss/style.scss */
+  /* line 265, ../scss/style.scss */
   .main-nav__item {
     margin-right: 15px;
     margin-left: 15px;
   }
-  /* line 252, ../scss/style.scss */
+  /* line 269, ../scss/style.scss */
   .main-nav__link {
     font-size: 12px;
     font-style: normal;
@@ -306,21 +325,21 @@ body {
     letter-spacing: normal;
   }
 
-  /* line 260, ../scss/style.scss */
+  /* line 277, ../scss/style.scss */
   .download {
     padding-bottom: 0;
     margin-top: 118px;
   }
-  /* line 263, ../scss/style.scss */
+  /* line 280, ../scss/style.scss */
   .download__link {
     margin-right: 8px;
   }
-  /* line 265, ../scss/style.scss */
+  /* line 282, ../scss/style.scss */
   .download__link:last-child {
     margin-right: 0;
   }
 
-  /* line 270, ../scss/style.scss */
+  /* line 287, ../scss/style.scss */
   .button-link {
     font-size: 8px;
     line-height: normal;
@@ -329,16 +348,16 @@ body {
     border-radius: 24px;
     box-shadow: 0px 10px 16px 0 #0a0e34;
   }
-  /* line 277, ../scss/style.scss */
+  /* line 294, ../scss/style.scss */
   .button-link__icon {
     font-size: 18px;
   }
-  /* line 280, ../scss/style.scss */
+  /* line 297, ../scss/style.scss */
   .button-link__wrapper {
     margin-left: 10px;
   }
 
-  /* line 284, ../scss/style.scss */
+  /* line 301, ../scss/style.scss */
   .header-wrapper-mobile {
     display: flex;
     flex-direction: column-reverse;
