@@ -22,21 +22,15 @@ $white-three: #efefef;
 body {
     margin: 0;
 }
+
 .container {
-    max-width: $container; 
+    max-width: $container;
     outline: 1px solid green;
     margin: 0 auto;
 }
 
 .card {
-    // display: flex;
-    // flex-direction: column;
-    // align-items: flex-end;
     &__title {
-        // display: flex;
-        // justify-content: flex-end;
-        // width: 655px/1925px*100%;
-        // padding-right: 250px/1925px*100%;
         font-family: "Proxima Nova-Bold", Arial, sans-serif;
         text-transform: uppercase;
         font-size: 90px;
@@ -49,7 +43,7 @@ body {
         color: $white-two;
         margin: 0;
         margin-top: 112px;
-        margin-bottom: 30px;
+        padding-bottom: 30px;
         &--players {
             // justify-content: flex-start;
             // padding-right: 0;
@@ -64,14 +58,21 @@ body {
 .row {
     position: relative;
     width: 100%;
-    // display: flex;
-    // flex-direction: column;
-    // align-items: flex-end;
-    // padding-right: 250px/1925px*100%;
+    &__wrapper {
+        padding-left: 828px-15px;
+        padding-right: 15px;
+        padding-top: 98px-30px;
+        padding-bottom: 102px;
+        &--players {
+            padding-top: 98px-30px;
+            padding-bottom: 102px;
+            padding-right: 828px-146px;
+            padding-left: 146px;
+        }
+    }
     &--players {
         // align-items: flex-start;
         padding-right: 0;
-        
         &.row--three {
             background-color: #090c35;
         }
@@ -99,8 +100,8 @@ body {
         color: $pinkish-grey;
         margin: 0;
         margin-top: 65px;
-        &--players{
-        // padding-left: 330px/1925px*100%;            
+        &--players {
+            // padding-left: 330px/1925px*100%;            
         }
         &--one {
             &::before {
@@ -200,9 +201,9 @@ body {
         &--three {
             color: $white;
         }
-        &--players{
+        &--players {
             // padding-left: 330px/1925px*100%;            
-            }
+        }
     }
 }
 
@@ -214,17 +215,17 @@ body {
     position: absolute;
     top: 50%;
     left: 50%;
-    display: none;//320
+    display: none; //320
 }
 
 .radio {
     display: none;
     &__label {
         font-size: 0;
-        display: none;//320
+        display: none; //320
     }
     &__row {
-        display: none;//320
+        display: none; //320
         &:checked+.radio__label::before {
             content: "";
             width: 10px;
@@ -237,7 +238,7 @@ body {
         }
     }
     &__label {
-        display: none;//320
+        display: none; //320
         &:hover {
             cursor: pointer;
         }

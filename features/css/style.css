@@ -3,14 +3,14 @@ body {
   margin: 0;
 }
 
-/* line 25, ../scss/style.scss */
+/* line 26, ../scss/style.scss */
 .container {
   max-width: 1560px;
   outline: 1px solid green;
   margin: 0 auto;
 }
 
-/* line 35, ../scss/style.scss */
+/* line 33, ../scss/style.scss */
 .card__title {
   font-family: "Proxima Nova-Bold", Arial, sans-serif;
   text-transform: uppercase;
@@ -24,35 +24,49 @@ body {
   color: #e7e7e7;
   margin: 0;
   margin-top: 112px;
-  margin-bottom: 30px;
+  padding-bottom: 30px;
 }
 
-/* line 64, ../scss/style.scss */
+/* line 58, ../scss/style.scss */
 .row {
   position: relative;
   width: 100%;
 }
-/* line 71, ../scss/style.scss */
+/* line 61, ../scss/style.scss */
+.row__wrapper {
+  padding-left: 813px;
+  padding-right: 15px;
+  padding-top: 68px;
+  padding-bottom: 102px;
+}
+/* line 66, ../scss/style.scss */
+.row__wrapper--players {
+  padding-top: 68px;
+  padding-bottom: 102px;
+  padding-right: 682px;
+  padding-left: 146px;
+}
+/* line 73, ../scss/style.scss */
 .row--players {
   padding-right: 0;
 }
-/* line 75, ../scss/style.scss */
+/* line 76, ../scss/style.scss */
 .row--players.row--three {
   background-color: #090c35;
 }
-/* line 79, ../scss/style.scss */
+/* line 80, ../scss/style.scss */
 .row--one {
   background-color: #ffffff;
 }
-/* line 82, ../scss/style.scss */
+/* line 83, ../scss/style.scss */
 .row--two {
   background-color: rgba(94, 66, 176, 0.06);
 }
-/* line 85, ../scss/style.scss */
+/* line 86, ../scss/style.scss */
 .row--three {
   background-color: #5e42b0;
 }
-/* line 88, ../scss/style.scss */
+/* line 89, ../scss/style.scss */
 .row__title {
   font-family: "Proxima Nova-Bold", Arial, sans-serif;
   text-transform: uppercase;
@@ -67,7 +81,7 @@ body {
   margin: 0;
   margin-top: 65px;
 }
-/* line 106, ../scss/style.scss */
+/* line 107, ../scss/style.scss */
 .row__title--one::before {
   content: "01";
   height: 100%;
@@ -86,7 +100,7 @@ body {
   vertical-align: top;
   margin-right: 15px;
 }
-/* line 126, ../scss/style.scss */
+/* line 127, ../scss/style.scss */
 .row__title--two::before {
   content: "02";
   height: 100%;
@@ -105,7 +119,7 @@ body {
   vertical-align: top;
   margin-right: 15px;
 }
-/* line 146, ../scss/style.scss */
+/* line 147, ../scss/style.scss */
 .row__title--three::before {
   content: "03";
   height: 100%;
@@ -124,7 +138,7 @@ body {
   vertical-align: top;
   margin-right: 15px;
 }
-/* line 166, ../scss/style.scss */
+/* line 167, ../scss/style.scss */
 .row__title--threeinvert::before {
   content: "03";
   height: 100%;
@@ -143,7 +157,7 @@ body {
   vertical-align: top;
   margin-right: 15px;
 }
-/* line 186, ../scss/style.scss */
+/* line 187, ../scss/style.scss */
 .row__description {
   font-family: "Proxima Nova-Regular", Arial, sans-serif;
   font-size: 20px;
@@ -158,12 +172,12 @@ body {
   margin-top: 31px;
   margin-bottom: 60px;
 }
-/* line 200, ../scss/style.scss */
+/* line 201, ../scss/style.scss */
 .row__description--three {
   color: #ffffff;
 }
 
-/* line 209, ../scss/style.scss */
+/* line 210, ../scss/style.scss */
 .slider__controls {
   display: flex;
   justify-content: center;
@@ -174,20 +188,20 @@ body {
   display: none;
 }
 
-/* line 220, ../scss/style.scss */
+/* line 221, ../scss/style.scss */
 .radio {
   display: none;
 }
-/* line 222, ../scss/style.scss */
+/* line 223, ../scss/style.scss */
 .radio__label {
   font-size: 0;
   display: none;
 }
-/* line 226, ../scss/style.scss */
+/* line 227, ../scss/style.scss */
 .radio__row {
   display: none;
 }
-/* line 228, ../scss/style.scss */
+/* line 229, ../scss/style.scss */
 .radio__row:checked + .radio__label::before {
   content: "";
   width: 10px;
@@ -198,15 +212,15 @@ body {
   display: block;
   margin-left: 12px;
 }
-/* line 239, ../scss/style.scss */
+/* line 240, ../scss/style.scss */
 .radio__label {
   display: none;
 }
-/* line 241, ../scss/style.scss */
+/* line 242, ../scss/style.scss */
 .radio__label:hover {
   cursor: pointer;
 }
-/* line 244, ../scss/style.scss */
+/* line 245, ../scss/style.scss */
 .radio__label::before {
   content: "";
   width: 10px;
@@ -219,29 +233,29 @@ body {
 }
 
 @media screen and (max-width: 1440px) {
-  /* line 260, ../scss/style.scss */
+  /* line 261, ../scss/style.scss */
   .card__title {
     width: 55.3385416667%;
     padding-right: 7.2916666667%;
     margin-top: 82px;
     margin-bottom: 20px;
   }
-  /* line 265, ../scss/style.scss */
+  /* line 266, ../scss/style.scss */
   .card__title--players {
     padding-left: 5.2083333333%;
   }
 
-  /* line 271, ../scss/style.scss */
+  /* line 272, ../scss/style.scss */
   .row--players {
     padding-left: 5.2083333333%;
   }
-  /* line 274, ../scss/style.scss */
+  /* line 275, ../scss/style.scss */
   .row__title {
     margin-top: 40px;
     width: 55.3385416667%;
     padding-right: 7.2916666667%;
   }
-  /* line 279, ../scss/style.scss */
+  /* line 280, ../scss/style.scss */
   .row__description {
     width: 55.3385416667%;
     padding-right: 7.2916666667%;
@@ -249,11 +263,11 @@ body {
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 289, ../scss/style.scss */
+  /* line 290, ../scss/style.scss */
   .row--one {
     display: none;
   }
-  /* line 292, ../scss/style.scss */
+  /* line 293, ../scss/style.scss */
   .row--three {
     display: none;
   }
