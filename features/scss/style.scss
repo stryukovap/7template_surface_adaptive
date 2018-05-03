@@ -25,7 +25,7 @@ body {
 
 .container {
     max-width: $container;
-    outline: 1px solid green;
+    // outline: 1px solid green;
     margin: 0 auto;
 }
 
@@ -214,6 +214,10 @@ body {
     }
 }
 
+.slider__controls {
+    display: none;
+}
+
 //template 768, 768-1440px
 @media screen and (max-width:1440px) {
     $container: 732px;
@@ -274,6 +278,9 @@ body {
             }
         }
     }
+    .slider__controls {
+        display: none;
+    }
 }
 
 @media screen and (max-width:767px) {
@@ -293,6 +300,20 @@ body {
             margin: 0;
             padding: 0;
         }
+        &--one {
+            background-color: rgba(94, 66, 176, 0.06);
+        }
+        &--two {
+            background-color: rgba(94, 66, 176, 0.06);
+        }
+        &--three {
+            background-color: rgba(94, 66, 176, 0.06);
+        }
+        &--players {
+            &.row--three {
+                background-color: rgba(94, 66, 176, 0.06);
+            }
+        }
         &__title {
             font-size: 28px;
             line-height: 1.23;
@@ -303,6 +324,17 @@ body {
             padding-top: 81px;
             padding-left: 19px;
             padding-right: 19px;
+            &--one {
+                &::before {
+                    border-bottom: 4px solid $bluey-purple;
+                    border-radius: 1.5px;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    letter-spacing: 0.7px;
+                    margin-right: 12px;
+                    margin-top: 1px;
+                }
+            }
             &--two {
                 &::before {
                     border-bottom: 4px solid $bluey-purple;
@@ -312,6 +344,29 @@ body {
                     letter-spacing: 0.7px;
                     margin-right: 12px;
                     margin-top: 1px;
+                }
+            }
+            &--three {
+                &::before {
+                    border-bottom: 4px solid $bluey-purple;
+                    border-radius: 1.5px;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    letter-spacing: 0.7px;
+                    margin-right: 12px;
+                    margin-top: 1px;
+                }
+            }
+            &--threeinvert {
+                &::before {
+                    border-bottom: 4px solid $bluey-purple;
+                    border-radius: 1.5px;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    letter-spacing: 0.7px;
+                    margin-right: 12px;
+                    margin-top: 1px;
+                    color: $black-four;
                 }
             }
         }
@@ -324,70 +379,66 @@ body {
             padding-bottom: 73px;
             padding-left: 19px;
             padding-right: 19px;
+            &--three {
+                color: $black-four;
+            }
         }
     }
-}
-
-.card--athlets .row--one {
-    display: none;
-}
-
-.card--athlets .row--three {
-    display: none;
-}
-
-.card--players .row--one {
-    display: none;
-}
-
-.card--players .row--two {
-    display: none;
-}
-
-.slider__controls {
-    // width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    top: -33px;
-    // position: absolute;
-    // top: 50%;
-    // left: 50%; // display: none; //320
-}
-
-.radio {
-    // display: none;
-    &__label {
-        font-size: 0; // display: none; //320
+    .card--athlets .row--one {
+        display: none;
     }
-    &__row {
-        display: none; //320
-        &:checked+.radio__label::before {
-            content: "";
-            width: 10px;
-            height: 10px;
-            background-color: #5c3caf;
-            background-size: 10px 10px;
-            border-radius: 50%;
-            display: block;
-            margin-left: 12px;
-        }
+    .card--athlets .row--three {
+        display: none;
     }
-    &__label {
-        // display: none; //320
-        &:hover {
-            cursor: pointer;
+    .card--players .row--one {
+        display: none;
+    }
+    .card--players .row--two {
+        display: none;
+    }
+    .slider__controls {
+        // width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        top: -33px; // position: absolute;
+        // top: 50%;
+        // left: 50%; // display: none; //320
+    }
+    .radio {
+        // display: none;
+        &__label {
+            font-size: 0; // display: none; //320
         }
-        &::before {
-            content: "";
-            width: 10px;
-            height: 10px;
-            background-color: #d8d8d8;
-            background-size: 10px 10px;
-            border-radius: 50%;
-            display: block;
-            margin-left: 12px;
+        &__row {
+            display: none; //320
+            &:checked+.radio__label::before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                background-color: #5c3caf;
+                background-size: 10px 10px;
+                border-radius: 50%;
+                display: block;
+                margin-left: 12px;
+            }
+        }
+        &__label {
+            // display: none; //320
+            &:hover {
+                cursor: pointer;
+            }
+            &::before {
+                content: "";
+                width: 10px;
+                height: 10px;
+                background-color: #d8d8d8;
+                background-size: 10px 10px;
+                border-radius: 50%;
+                display: block;
+                margin-left: 12px;
+            }
         }
     }
 }

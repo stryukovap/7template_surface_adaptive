@@ -6,7 +6,6 @@ body {
 /* line 26, ../scss/style.scss */
 .container {
   max-width: 1560px;
-  outline: 1px solid green;
   margin: 0 auto;
 }
 
@@ -179,8 +178,13 @@ body {
   color: #ffffff;
 }
 
+/* line 217, ../scss/style.scss */
+.slider__controls {
+  display: none;
+}
+
 @media screen and (max-width: 1440px) {
-  /* line 221, ../scss/style.scss */
+  /* line 225, ../scss/style.scss */
   .card__title {
     margin: 0;
     margin-top: 85px;
@@ -189,7 +193,7 @@ body {
     padding-left: 258px;
     padding-right: 48px;
   }
-  /* line 228, ../scss/style.scss */
+  /* line 232, ../scss/style.scss */
   .card__title--players {
     margin: 0;
     margin-top: 85px;
@@ -199,16 +203,16 @@ body {
     padding-right: 48px;
   }
 
-  /* line 239, ../scss/style.scss */
+  /* line 243, ../scss/style.scss */
   .row__wrapper {
     padding: 0;
   }
-  /* line 241, ../scss/style.scss */
+  /* line 245, ../scss/style.scss */
   .row__wrapper--players {
     padding: 0;
     margin: 0;
   }
-  /* line 246, ../scss/style.scss */
+  /* line 250, ../scss/style.scss */
   .row__title {
     margin: 0;
     padding: 0;
@@ -216,7 +220,7 @@ body {
     padding-left: 258px;
     padding-right: 15px;
   }
-  /* line 252, ../scss/style.scss */
+  /* line 256, ../scss/style.scss */
   .row__title--players {
     margin: 0;
     padding: 0;
@@ -224,7 +228,7 @@ body {
     padding-right: 48px;
     padding-left: 48px;
   }
-  /* line 260, ../scss/style.scss */
+  /* line 264, ../scss/style.scss */
   .row__description {
     margin: 0;
     margin-top: 32px;
@@ -233,7 +237,7 @@ body {
     padding-bottom: 40px;
     font-size: 18px;
   }
-  /* line 267, ../scss/style.scss */
+  /* line 271, ../scss/style.scss */
   .row__description--players {
     margin: 0;
     margin-top: 32px;
@@ -242,9 +246,14 @@ body {
     padding-left: 48px;
     padding-bottom: 40px;
   }
+
+  /* line 281, ../scss/style.scss */
+  .slider__controls {
+    display: none;
+  }
 }
 @media screen and (max-width: 767px) {
-  /* line 281, ../scss/style.scss */
+  /* line 288, ../scss/style.scss */
   .card__title {
     font-size: 50px;
     line-height: 1.2;
@@ -255,12 +264,28 @@ body {
     padding-right: 19px;
   }
 
-  /* line 292, ../scss/style.scss */
+  /* line 299, ../scss/style.scss */
   .row__wrapper {
     margin: 0;
     padding: 0;
   }
-  /* line 296, ../scss/style.scss */
+  /* line 303, ../scss/style.scss */
+  .row--one {
+    background-color: rgba(94, 66, 176, 0.06);
+  }
+  /* line 306, ../scss/style.scss */
+  .row--two {
+    background-color: rgba(94, 66, 176, 0.06);
+  }
+  /* line 309, ../scss/style.scss */
+  .row--three {
+    background-color: rgba(94, 66, 176, 0.06);
+  }
+  /* line 313, ../scss/style.scss */
+  .row--players.row--three {
+    background-color: rgba(94, 66, 176, 0.06);
+  }
+  /* line 317, ../scss/style.scss */
   .row__title {
     font-size: 28px;
     line-height: 1.23;
@@ -272,7 +297,17 @@ body {
     padding-left: 19px;
     padding-right: 19px;
   }
-  /* line 307, ../scss/style.scss */
+  /* line 328, ../scss/style.scss */
+  .row__title--one::before {
+    border-bottom: 4px solid #5e42b0;
+    border-radius: 1.5px;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    margin-right: 12px;
+    margin-top: 1px;
+  }
+  /* line 339, ../scss/style.scss */
   .row__title--two::before {
     border-bottom: 4px solid #5e42b0;
     border-radius: 1.5px;
@@ -282,7 +317,28 @@ body {
     margin-right: 12px;
     margin-top: 1px;
   }
-  /* line 318, ../scss/style.scss */
+  /* line 350, ../scss/style.scss */
+  .row__title--three::before {
+    border-bottom: 4px solid #5e42b0;
+    border-radius: 1.5px;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    margin-right: 12px;
+    margin-top: 1px;
+  }
+  /* line 361, ../scss/style.scss */
+  .row__title--threeinvert::before {
+    border-bottom: 4px solid #5e42b0;
+    border-radius: 1.5px;
+    font-size: 14px;
+    line-height: 1.5;
+    letter-spacing: 0.7px;
+    margin-right: 12px;
+    margin-top: 1px;
+    color: #000000;
+  }
+  /* line 373, ../scss/style.scss */
   .row__description {
     font-size: 15px;
     line-height: 1.2;
@@ -293,69 +349,74 @@ body {
     padding-left: 19px;
     padding-right: 19px;
   }
-}
-/* line 331, ../scss/style.scss */
-.card--athlets .row--one {
-  display: none;
-}
+  /* line 382, ../scss/style.scss */
+  .row__description--three {
+    color: #000000;
+  }
 
-/* line 335, ../scss/style.scss */
-.card--athlets .row--three {
-  display: none;
-}
+  /* line 387, ../scss/style.scss */
+  .card--athlets .row--one {
+    display: none;
+  }
 
-/* line 339, ../scss/style.scss */
-.card--players .row--one {
-  display: none;
-}
+  /* line 390, ../scss/style.scss */
+  .card--athlets .row--three {
+    display: none;
+  }
 
-/* line 343, ../scss/style.scss */
-.card--players .row--two {
-  display: none;
-}
+  /* line 393, ../scss/style.scss */
+  .card--players .row--one {
+    display: none;
+  }
 
-/* line 347, ../scss/style.scss */
-.slider__controls {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: relative;
-  top: -33px;
-}
+  /* line 396, ../scss/style.scss */
+  .card--players .row--two {
+    display: none;
+  }
 
-/* line 361, ../scss/style.scss */
-.radio__label {
-  font-size: 0;
-}
-/* line 364, ../scss/style.scss */
-.radio__row {
-  display: none;
-}
-/* line 366, ../scss/style.scss */
-.radio__row:checked + .radio__label::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  background-color: #5c3caf;
-  background-size: 10px 10px;
-  border-radius: 50%;
-  display: block;
-  margin-left: 12px;
-}
-/* line 379, ../scss/style.scss */
-.radio__label:hover {
-  cursor: pointer;
-}
-/* line 382, ../scss/style.scss */
-.radio__label::before {
-  content: "";
-  width: 10px;
-  height: 10px;
-  background-color: #d8d8d8;
-  background-size: 10px 10px;
-  border-radius: 50%;
-  display: block;
-  margin-left: 12px;
+  /* line 399, ../scss/style.scss */
+  .slider__controls {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    top: -33px;
+  }
+
+  /* line 411, ../scss/style.scss */
+  .radio__label {
+    font-size: 0;
+  }
+  /* line 414, ../scss/style.scss */
+  .radio__row {
+    display: none;
+  }
+  /* line 416, ../scss/style.scss */
+  .radio__row:checked + .radio__label::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #5c3caf;
+    background-size: 10px 10px;
+    border-radius: 50%;
+    display: block;
+    margin-left: 12px;
+  }
+  /* line 429, ../scss/style.scss */
+  .radio__label:hover {
+    cursor: pointer;
+  }
+  /* line 432, ../scss/style.scss */
+  .radio__label::before {
+    content: "";
+    width: 10px;
+    height: 10px;
+    background-color: #d8d8d8;
+    background-size: 10px 10px;
+    border-radius: 50%;
+    display: block;
+    margin-left: 12px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
