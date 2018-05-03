@@ -44,6 +44,29 @@ body {
         margin: 0;
         margin-top: 112px;
         padding-bottom: 30px;
+        position: relative;
+        &--athlets {
+            // &::before {
+            //     content: "";
+            //     position: absolute;
+            //     width: 17px;
+            //     height: 17px;
+            //     background-image: url(../../img/art_cross_17x17.png);
+            //     background-position: center center;
+            //     bottom: 35px;
+            //     left: -583px;
+            // }
+            // &::after{
+            //     content: "";
+            //     position: absolute;
+            //     width: 17px;
+            //     height: 17px;
+            //     background-image: url(../../img/art_cross_light_17x17.png);
+            //     background-position: center center;
+            //     bottom: 45px;
+            //     left: -610px;
+            // }
+        }
         &--players {
             // justify-content: flex-start;
             // padding-right: 0;
@@ -257,41 +280,121 @@ body {
 
 //template 768, 768-1440px
 @media screen and (max-width:1440px) {
+    $container: 732px;
     .card {
         &__title {
-            width: 425px/768px*100%;
-            padding-right: 56px/768px*100%;
-            margin-top: 82px;
-            margin-bottom: 20px;
+            margin: 0;
+            margin-top: 85px;
+            margin-bottom: 61px-41px; //---
+            padding: 0;
+            padding-left: 258px;
+            padding-right: 48px;
             &--players {
-                padding-left: 40px/768px*100%;
+                margin: 0;
+                margin-top: 85px;
+                margin-bottom: 61px-41px;
+                padding: 0;
+                padding-left: 48px;
+                padding-right: 48px;
             }
         }
     }
     .row {
-        &--players {
-            padding-left: 40px/768px*100%;
+        &__wrapper {
+            padding: 0;
+            &--players {
+                padding: 0;
+                margin: 0;
+            }
         }
         &__title {
-            margin-top: 40px;
-            width: 425px/768px*100%;
-            padding-right: 56px/768px*100%;
+            margin: 0;
+            padding: 0;
+            padding-top: 41px;
+            padding-left: 258px;
+            padding-right: 15px;
+            &--players {
+                margin: 0;
+                padding: 0;                
+                padding-top: 41px;
+                padding-right: 48px;
+                padding-left: 48px;
+            }
         }
         &__description {
-            width: 425px/768px*100%;
-            padding-right: 56px/768px*100%;
+            margin: 0;
+            margin-top: 32px;
+            padding-left: 258px+33px;
+            padding-right: 48px;
+            padding-bottom: 40px;
             font-size: 18px;
+            &--players {
+                margin: 0;
+                margin-top: 32px;
+                padding: 0;
+                padding-right: 270px;
+                padding-left: 48px;
+                padding-bottom: 40px;
+            }
         }
     }
 }
 
 @media screen and (max-width:767px) {
+    .card {
+        &__title {
+            font-size: 50px;
+            line-height: 1.2;
+            margin: 0;
+            padding: 0;
+            margin-top: 26px;
+            padding-left: 19px;
+            padding-right: 19px;
+        }
+    }
     .row {
+        &__wrapper {
+            margin: 0;
+            padding: 0;
+        }
+        &__title {
+            font-size: 28px;
+            line-height: 1.23;
+            letter-spacing: 1.4px;
+            margin: 0;
+            padding: 0;
+            margin-top: 245px;
+            padding-top: 81px;
+            padding-left: 19px;
+            padding-right: 19px;
+            &--two {
+                &::before {
+                    border-bottom: 4px solid $bluey-purple;
+                    border-radius: 1.5px;
+                    font-size: 14px;
+                    line-height: 1.5;
+                    letter-spacing: 0.7px;
+                    margin-right: 12px;
+                    margin-top: 1px;
+                }
+            }
+        }
         &--one {
             display: none;
         }
+        &--two {}
         &--three {
             display: none;
+        }
+        &__description {
+            font-size: 15px;
+            line-height: 1.2;
+            letter-spacing: 0.8px;
+            margin: 0;
+            padding: 0;
+            padding-bottom: 73px;
+            padding-left: 19px;
+            padding-right: 19px;
         }
     }
 }
