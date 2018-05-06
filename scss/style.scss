@@ -320,6 +320,16 @@ body {
 
 .card {
     position: relative;
+    // &--athlets{
+    //     position: relative;
+    //     z-index: 2;
+    //     background-image: url(../img/footballer_678x950.png);
+    //     background-repeat: no-repeat;
+    //     background-position: center left;
+    //     background-size: 678px 950px;
+        // height: 100%;
+        // width: 50%;
+    // }
     &__title {
         font-family: "Proxima Nova-Bold", Arial, sans-serif;
         text-transform: uppercase;
@@ -360,7 +370,8 @@ body {
 }
 
 .row {
-    position: relative; // z-index: 1;
+    position: relative; 
+    z-index: 1;
     width: 100%;
     &__wrapper {
         padding-left: 828px-15px;
