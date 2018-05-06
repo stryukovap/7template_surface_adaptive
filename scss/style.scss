@@ -319,6 +319,7 @@ body {
 }
 
 .card {
+    position: relative;
     &__title {
         font-family: "Proxima Nova-Bold", Arial, sans-serif;
         text-transform: uppercase;
@@ -359,7 +360,7 @@ body {
 }
 
 .row {
-    position: relative;
+    position: relative; // z-index: 1;
     width: 100%;
     &__wrapper {
         padding-left: 828px-15px;
@@ -402,10 +403,11 @@ body {
         margin: 0;
         margin-top: 65px;
         position: relative;
+        padding-left: 32px;
         &_number {
             position: absolute;
             top: -6px;
-            left: -32px;
+            left: 0px;
             font-size: 18px;
             font-weight: bold;
             font-style: normal;
@@ -415,15 +417,45 @@ body {
             text-align: center;
             color: #000000;
             display: block;
-            ::before {
+            &--three--players {
+                color: #9173e6;
+            }
+            &::before {
                 content: "";
                 position: absolute;
-                top: 0;
-                left: 0;
+                bottom: 0;
+                left: 50%;
+                margin-left: -9.5px;
                 width: 19px;
                 height: 5px;
                 border-radius: 2px;
                 background-color: #5e42b0;
+                background-size: 19px 5px;
+                display: block;
+            }
+            &--three--athlets::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                margin-left: -9.5px;
+                width: 19px;
+                height: 5px;
+                border-radius: 2px;
+                background-color: #ffffff;
+                background-size: 19px 5px;
+                display: block;
+            }
+            &--three--players::before {
+                content: "";
+                position: absolute;
+                bottom: 0;
+                left: 50%;
+                margin-left: -9.5px;
+                width: 19px;
+                height: 5px;
+                border-radius: 2px;
+                background-color: #ffffff;
                 background-size: 19px 5px;
                 display: block;
             }
@@ -485,20 +517,25 @@ body {
             margin: 0;
             padding: 0;
             padding-top: 41px;
-            padding-left: 258px;
+            margin-left: 258px;
+            padding-left: 32px;
             padding-right: 15px;
             &--players {
                 margin: 0;
                 padding: 0;
                 padding-top: 41px;
                 padding-right: 48px;
-                padding-left: 48px;
+                margin-left: 48px;
+                padding-left: 32px;
+            }
+            &_number {
+                top: 35px;
             }
         }
         &__description {
             margin: 0;
             margin-top: 32px;
-            padding-left: 258px+33px;
+            padding-left: 258px+33px-32px;
             padding-right: 48px;
             padding-bottom: 40px;
             font-size: 18px;
@@ -556,53 +593,75 @@ body {
             padding: 0;
             margin-top: 245px;
             padding-top: 81px;
-            padding-left: 19px;
-            padding-right: 19px;
-            &--one {
+            padding-left: 30px;
+            margin-left: 19px;
+            margin-right: 19px;
+            &_number {
+                font-size: 14px;
+                line-height: 2.46;
+                letter-spacing: 0.7px;
+                top: 77px;
+                bottom: 8px;
                 &::before {
-                    border-bottom: 4px solid #5e42b0;
+                    height: 4px;
                     border-radius: 1.5px;
-                    font-size: 14px;
-                    line-height: 1.5;
-                    letter-spacing: 0.7px;
-                    margin-right: 12px;
-                    margin-top: 1px;
                 }
-            }
-            &--two {
-                &::before {
-                    border-bottom: 4px solid #5e42b0;
-                    border-radius: 1.5px;
-                    font-size: 14px;
-                    line-height: 1.5;
-                    letter-spacing: 0.7px;
-                    margin-right: 12px;
-                    margin-top: 1px;
-                }
-            }
-            &--three {
-                &::before {
-                    border-bottom: 4px solid #5e42b0;
-                    border-radius: 1.5px;
-                    font-size: 14px;
-                    line-height: 1.5;
-                    letter-spacing: 0.7px;
-                    margin-right: 12px;
-                    margin-top: 1px;
-                }
-            }
-            &--threeinvert {
-                &::before {
-                    border-bottom: 4px solid #5e42b0;
-                    border-radius: 1.5px;
-                    font-size: 14px;
-                    line-height: 1.5;
-                    letter-spacing: 0.7px;
-                    margin-right: 12px;
-                    margin-top: 1px;
+                &--three--players {
                     color: #000000;
                 }
-            }
+                &--three--athlets::before {
+                    background-color: #5e42b0;
+
+                }
+                &--three--players::before {
+                    background-color: #5e42b0;
+
+                }
+            } // &--one {
+            //     &::before {
+            //         border-bottom: 4px solid #5e42b0;
+            //         border-radius: 1.5px;
+            //         font-size: 14px;
+            //         line-height: 1.5;
+            //         letter-spacing: 0.7px;
+            //         margin-right: 12px;
+            //         margin-top: 1px;
+            //     }
+            // }
+            // &--two {
+            //     &::before {
+            //         border-bottom: 4px solid #5e42b0;
+            //         border-radius: 1.5px;
+            //         font-size: 14px;
+            //         line-height: 1.5;
+            //         letter-spacing: 0.7px;
+            //         margin-right: 12px;
+            //         margin-top: 1px;
+            //     }
+            // }
+            // &--three {
+            //     &::before {
+            //         border-bottom: 4px solid #5e42b0;
+            //         border-radius: 1.5px;
+            //         font-size: 14px;
+            //         line-height: 1.5;
+            //         letter-spacing: 0.7px;
+            //         margin-right: 12px;
+            //         margin-top: 1px;
+            //     }
+            // }
+            // &--threeinvert {
+            //     &::before {
+            //         border-bottom: 4px solid #5e42b0;
+            //         border-radius: 1.5px;
+            //         font-size: 14px;
+            //         line-height: 1.5;
+            //         letter-spacing: 0.7px;
+            //         margin-right: 12px;
+            //         margin-top: 1px;
+            //         color: #000000;
+            //     }
+            // }
         }
         &__description {
             font-size: 15px;
