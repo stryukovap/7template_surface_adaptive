@@ -91,17 +91,165 @@
   padding-left: 150px;
   padding-right: 300px;
 }
-/* line 87, ../scss/style.scss */
+/* line 86, ../scss/style.scss */
 .foto--one {
   background-image: url(../../img/beactive_960x730.png);
 }
-/* line 90, ../scss/style.scss */
+/* line 89, ../scss/style.scss */
 .foto--two {
   background-image: url(../../img/findcontact_960x730.png);
 }
-/* line 93, ../scss/style.scss */
+/* line 92, ../scss/style.scss */
 .foto--three {
   background-image: url(../../img/workit_960x730.png);
+}
+
+@media screen and (max-width: 1440px) {
+  /* line 99, ../scss/style.scss */
+  .foto {
+    width: 100%;
+  }
+  /* line 101, ../scss/style.scss */
+  .foto__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* line 105, ../scss/style.scss */
+  .foto__wrap:nth-child(2n) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* line 109, ../scss/style.scss */
+  .foto__wrap:nth-child(2n) .foto__description__title__number {
+    right: auto;
+    left: auto;
+  }
+  /* line 115, ../scss/style.scss */
+  .foto__description {
+    width: 100%;
+  }
+  /* line 117, ../scss/style.scss */
+  .foto__description__title {
+    margin: 0;
+    padding: 0;
+    margin-top: 90px;
+    margin-left: 33px;
+    margin-right: 33px;
+    max-width: auto;
+  }
+  /* line 124, ../scss/style.scss */
+  .foto__description__title__number {
+    padding: 40.72px;
+    top: -184.28px;
+    left: 0;
+  }
+  /* line 128, ../scss/style.scss */
+  .foto__description__title__number::after {
+    top: 84.28px;
+  }
+  /* line 133, ../scss/style.scss */
+  .foto__description__text {
+    margin: 0;
+    padding: 0;
+    margin-top: 36px;
+    padding-left: 33px;
+    padding-right: 33px;
+    padding-bottom: 110px;
+  }
+  /* line 142, ../scss/style.scss */
+  .foto--one {
+    min-height: 584px;
+  }
+  /* line 145, ../scss/style.scss */
+  .foto--two {
+    min-height: 584px;
+  }
+  /* line 148, ../scss/style.scss */
+  .foto--three {
+    min-height: 584px;
+  }
+}
+@media screen and (max-width: 767px) {
+  /* line 155, ../scss/style.scss */
+  .foto {
+    width: 100%;
+  }
+  /* line 157, ../scss/style.scss */
+  .foto__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* line 161, ../scss/style.scss */
+  .foto__wrap:nth-child(2n) {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  /* line 165, ../scss/style.scss */
+  .foto__wrap:nth-child(2n) .foto__description__title__number {
+    right: auto;
+    left: auto;
+  }
+  /* line 171, ../scss/style.scss */
+  .foto__description {
+    width: 100%;
+  }
+  /* line 173, ../scss/style.scss */
+  .foto__description__title {
+    font-size: 28px;
+    line-height: 1.23;
+    letter-spacing: 1.4px;
+    color: #e7e7e7;
+    margin: 0;
+    padding: 0;
+    margin-top: 35px;
+    margin-left: 20px;
+    margin-right: 20px;
+    max-width: auto;
+  }
+  /* line 184, ../scss/style.scss */
+  .foto__description__title__number {
+    font-size: 14px;
+    line-height: 2.46;
+    letter-spacing: 0.7px;
+    padding: 9.78px 24px 14.78px 24px;
+    top: -80px;
+    left: 0;
+  }
+  /* line 191, ../scss/style.scss */
+  .foto__description__title__number::after {
+    width: 16px;
+    height: 4px;
+    top: 44px;
+    margin: -8px;
+  }
+  /* line 199, ../scss/style.scss */
+  .foto__description__text {
+    font-size: 16px;
+    line-height: 1.25;
+    letter-spacing: 0.8px;
+    margin: 0;
+    padding: 0;
+    margin-top: 23px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 80px;
+  }
+  /* line 211, ../scss/style.scss */
+  .foto--one {
+    min-height: 351px;
+  }
+  /* line 214, ../scss/style.scss */
+  .foto--two {
+    min-height: 351px;
+  }
+  /* line 217, ../scss/style.scss */
+  .foto--three {
+    min-height: 351px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

@@ -18,7 +18,7 @@ $container:1560px;
         }
     }
     &__description {
-        width: 50%; 
+        width: 50%;
         &__title {
             position: relative;
             font-family: "Proxima Nova", Arial, sans-serif;
@@ -32,7 +32,7 @@ $container:1560px;
             text-align: left;
             color: rgba(193, 193, 193, 0.4);
             margin-top: 257px;
-            max-width: 300px/1920px/2%;            
+            max-width: 300px/1920px/2%;
             padding-left: 150px;
             text-transform: uppercase;
             &__number {
@@ -77,8 +77,7 @@ $container:1560px;
             letter-spacing: 1.2px;
             text-align: left;
             color: #000000;
-            margin-top: 119px;
-            // max-width: 300px/1920px/2%;
+            margin-top: 119px; // max-width: 300px/1920px/2%;
             padding-bottom: 250px;
             padding-left: 150px;
             padding-right: 300px;
@@ -94,9 +93,129 @@ $container:1560px;
         background-image: url(../../img/workit_960x730.png);
     }
 }
+
 //template 768, 768-1440px
-@media screen and (max-width:1440px){
-    
+@media screen and (max-width:1440px) {
+    .foto {
+        width: 100%;
+        &__wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &:nth-child(2n) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                & .foto__description__title__number {
+                    right: auto;
+                    left: auto;
+                }
+            }
+        }
+        &__description {
+            width: 100%;
+            &__title {
+                margin: 0;
+                padding: 0;
+                margin-top: 90px;
+                margin-left: 33px;
+                margin-right: 33px;
+                max-width: auto;
+                &__number {
+                    padding: 40.72px;
+                    top: 0-51px - 116px - 24px/2*1.44;
+                    left: 0;
+                    &::after {
+                        top: 40.72px+24px*1.44+9px;
+                    }
+                }
+            }
+            &__text {
+                margin: 0;
+                padding: 0;
+                margin-top: 36px;
+                padding-left: 33px;
+                padding-right: 33px;
+                padding-bottom: 110px;
+            }
+        }
+        &--one {
+            min-height: 584px;
+        }
+        &--two {
+            min-height: 584px;
+        }
+        &--three {
+            min-height: 584px;
+        }
+    }
 }
 
-// @media screen and (max-width:767px)
+@media screen and (max-width:767px) {
+    .foto {
+        width: 100%;
+        &__wrap {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            &:nth-child(2n) {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                & .foto__description__title__number {
+                    right: auto;
+                    left: auto;
+                }
+            }
+        }
+        &__description {
+            width: 100%;
+            &__title {
+                font-size: 28px;
+                line-height: 1.23;
+                letter-spacing: 1.4px;
+                color: #e7e7e7;
+                margin: 0;
+                padding: 0;
+                margin-top: 35px;
+                margin-left: 20px;
+                margin-right: 20px;
+                max-width: auto;
+                &__number {
+                    font-size: 14px;
+                    line-height: 2.46;
+                    letter-spacing: 0.7px;
+                    padding: 9.78px 24px 14.78px 24px;
+                    top: -80px;
+                    left: 0;
+                    &::after {
+                        width: 16px;
+                        height: 4px;
+                        top: 44px;
+                        margin: -8px;
+                    }
+                }
+            }
+            &__text {
+                font-size: 16px;
+                line-height: 1.25;
+                letter-spacing: 0.8px;
+                margin: 0;
+                padding: 0;
+                margin-top: 23px;
+                padding-left: 20px;
+                padding-right: 20px;
+                padding-bottom: 80px;
+            }
+        }
+        &--one {
+            min-height: 351px;
+        }
+        &--two {
+            min-height: 351px;
+        }
+        &--three {
+            min-height: 351px;
+        }
+    }
+}
