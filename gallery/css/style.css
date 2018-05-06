@@ -15,16 +15,38 @@
   display: flex;
   flex-direction: row-reverse;
 }
-/* line 16, ../scss/style.scss */
+/* line 14, ../scss/style.scss */
+.foto__wrap:nth-child(2n) .foto__description__title__number {
+  right: -80px;
+  left: auto;
+}
+/* line 20, ../scss/style.scss */
 .foto__description {
   width: 50%;
 }
-/* line 18, ../scss/style.scss */
-.foto__description__number {
+/* line 22, ../scss/style.scss */
+.foto__description__title {
+  position: relative;
+  font-family: "Proxima Nova", Arial, sans-serif;
+  margin: 0;
+  font-size: 90px;
+  font-weight: bold;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1;
+  letter-spacing: normal;
+  text-align: left;
+  color: rgba(193, 193, 193, 0.4);
+  margin-top: 257px;
+  max-width: 300px/1920px/2%;
+  padding-left: 150px;
+  text-transform: uppercase;
+}
+/* line 38, ../scss/style.scss */
+.foto__description__title__number {
   position: absolute;
-  top: 0;
-  left: 0;
-  top: 40%;
+  top: -45px;
+  left: -80px;
   padding: 70px;
   background-color: #5e42b0;
   background-position: center center;
@@ -38,8 +60,8 @@
   text-align: center;
   color: #f5f6f7;
 }
-/* line 35, ../scss/style.scss */
-.foto__description__number::after {
+/* line 54, ../scss/style.scss */
+.foto__description__title__number::after {
   content: "";
   position: absolute;
   width: 22px;
@@ -52,22 +74,7 @@
   margin: -11px;
   display: block;
 }
-/* line 50, ../scss/style.scss */
-.foto__description__title {
-  position: relative;
-  font-family: "Proxima Nova", Arial, sans-serif;
-  margin: 0;
-  font-size: 90px;
-  font-weight: bold;
-  font-style: normal;
-  font-stretch: normal;
-  line-height: 1;
-  letter-spacing: normal;
-  text-align: left;
-  color: rgba(193, 193, 193, 0.4);
-  text-transform: uppercase;
-}
-/* line 65, ../scss/style.scss */
+/* line 69, ../scss/style.scss */
 .foto__description__text {
   font-family: "Proxima Nova", Arial, sans-serif;
   margin: 0;
@@ -79,16 +86,20 @@
   letter-spacing: 1.2px;
   text-align: left;
   color: #000000;
+  margin-top: 119px;
+  padding-bottom: 250px;
+  padding-left: 150px;
+  padding-right: 300px;
 }
-/* line 81, ../scss/style.scss */
+/* line 87, ../scss/style.scss */
 .foto--one {
   background-image: url(../../img/beactive_960x730.png);
 }
-/* line 84, ../scss/style.scss */
+/* line 90, ../scss/style.scss */
 .foto--two {
   background-image: url(../../img/findcontact_960x730.png);
 }
-/* line 87, ../scss/style.scss */
+/* line 93, ../scss/style.scss */
 .foto--three {
   background-image: url(../../img/workit_960x730.png);
 }
