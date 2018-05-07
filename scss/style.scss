@@ -1,6 +1,7 @@
 $container:1560px;
 .container {
-    max-width: $container; // outline: 1px solid green;
+    max-width: $container;
+    outline: 1px solid pink;
     margin: 0 auto;
 }
 
@@ -320,16 +321,46 @@ body {
 
 .card {
     position: relative;
-    // &--athlets{
-    //     position: relative;
-    //     z-index: 2;
-    //     background-image: url(../img/footballer_678x950.png);
-    //     background-repeat: no-repeat;
-    //     background-position: center left;
-    //     background-size: 678px 950px;
-        // height: 100%;
-        // width: 50%;
-    // }
+    outline: 1px solid red;
+    // z-index: 0;
+    &__img{
+        &--athlets {
+            position: absolute;
+            outline: 1px solid green;
+            // position: relative;
+            background-image: url(../img/footballer_678x950.png);
+            top: 20px;
+            left: 0;
+            height: 100%;
+            width: 50%;
+            z-index: 2;
+            background-repeat: no-repeat;
+            background-position: center right;
+            background-size: contain;
+            // background-position-x: 14%;s
+            overflow: hidden;
+            display: block;
+        }
+        &--players {
+            position: absolute;            
+            outline: 1px solid green;
+            background-image: url(../img/player_991x815.png);
+            top: -20px;
+            right: 5%;
+            height: 100%;
+            width: 50%;
+            z-index: 2;
+            background-repeat: no-repeat;
+            background-position: center left;
+            // background-size: 991px 815px;
+            // background-position-x: 86%;
+            overflow: hidden;
+            background-size: contain;            
+            display: block;
+        }
+    }
+    
+   
     &__title {
         font-family: "Proxima Nova-Bold", Arial, sans-serif;
         text-transform: uppercase;
@@ -342,47 +373,32 @@ body {
         text-align: left;
         color: #e7e7e7;
         margin: 0;
-        margin-top: 112px;
-        padding-bottom: 30px;
-        position: relative; // &--athlets {
-        // &::before {
-        //     content: "";
-        //     position: absolute;
-        //     width: 17px;
-        //     height: 17px;
-        //     background-image: url(../../img/art_cross_17x17.png);
-        //     background-position: center center;
-        //     bottom: 35px;
-        //     left: -583px;
-        // }
-        // &::after{
-        //     content: "";
-        //     position: absolute;
-        //     width: 17px;
-        //     height: 17px;
-        //     background-image: url(../../img/art_cross_light_17x17.png);
-        //     background-position: center center;
-        //     bottom: 45px;
-        //     left: -610px;
-        // }
-        // }
+        padding-top: 60px; // padding-bottom: 30px;
+        margin-left: 46px;
+        padding-left: 50%;
+        padding-right: 30px;
+        position: relative;
+        &--players {
+            padding-left: 46px + 32px;
+        }
     }
 }
 
 .row {
-    position: relative; 
-    z-index: 1;
+    position: relative;
+    z-index: -1;
     width: 100%;
     &__wrapper {
-        padding-left: 828px-15px;
-        padding-right: 15px;
-        padding-top: 98px-30px;
-        padding-bottom: 102px;
+        max-width: 50%;
+        padding-left: 50%;
+        padding-right: 145px;
+        padding-top: 65px;
+        padding-bottom: 60px;
         &--players {
-            padding-top: 98px-30px;
-            padding-bottom: 102px;
-            padding-right: 828px-146px;
-            padding-left: 146px;
+            padding-top: 65px;
+            padding-bottom: 60px;
+            padding-right: 895px;
+            padding-left: 100px;
         }
     }
     &--players {
@@ -411,10 +427,11 @@ body {
         letter-spacing: 1.8px;
         text-align: left;
         color: #c1c1c1;
-        margin: 0;
-        margin-top: 65px;
+        margin: 0; // margin-top: 65px;
+        // padding-top: 65px;
         position: relative;
         padding-left: 32px;
+        margin-left: 46px;
         &_number {
             position: absolute;
             top: -6px;
@@ -485,7 +502,8 @@ body {
         color: #000000;
         margin: 0;
         margin-top: 31px;
-        margin-bottom: 60px;
+        margin-left: 46px; // margin-right: 115px;
+        // margin-bottom: 60px;
         &--three {
             color: #ffffff;
         }
@@ -502,25 +520,28 @@ body {
         &__title {
             margin: 0;
             margin-top: 85px;
-            margin-bottom: 61px-41px; //---
+            margin-bottom: 61px - 41px;
             padding: 0;
-            padding-left: 258px;
+            padding-left: 38%;
             padding-right: 48px;
             &--players {
                 margin: 0;
                 margin-top: 85px;
-                margin-bottom: 61px-41px;
+                margin-bottom: 61px - 41px;
                 padding: 0;
                 padding-left: 48px;
-                padding-right: 48px;
+                padding-right: 38%;
             }
         }
     }
     .row {
         &__wrapper {
             padding: 0;
+            padding-left: 38%;
+            max-width: 62%;
             &--players {
                 padding: 0;
+                padding-right: 38%;
                 margin: 0;
             }
         }
@@ -528,9 +549,8 @@ body {
             margin: 0;
             padding: 0;
             padding-top: 41px;
-            margin-left: 258px;
             padding-left: 32px;
-            padding-right: 15px;
+            padding-right: 48px;
             &--players {
                 margin: 0;
                 padding: 0;
@@ -546,7 +566,7 @@ body {
         &__description {
             margin: 0;
             margin-top: 32px;
-            padding-left: 258px+33px-32px;
+            padding-left: 0px;
             padding-right: 48px;
             padding-bottom: 40px;
             font-size: 18px;
@@ -554,7 +574,6 @@ body {
                 margin: 0;
                 margin-top: 32px;
                 padding: 0;
-                padding-right: 270px;
                 padding-left: 48px;
                 padding-bottom: 40px;
             }
@@ -581,6 +600,10 @@ body {
         &__wrapper {
             margin: 0;
             padding: 0;
+            max-width: 100%;
+            &--players {
+                padding-right: 0;
+            }
         }
         &--one {
             background-color: rgba(94, 66, 176, 0.06);
@@ -622,57 +645,11 @@ body {
                 }
                 &--three--athlets::before {
                     background-color: #5e42b0;
-
                 }
                 &--three--players::before {
                     background-color: #5e42b0;
-
                 }
-            } // &--one {
-            //     &::before {
-            //         border-bottom: 4px solid #5e42b0;
-            //         border-radius: 1.5px;
-            //         font-size: 14px;
-            //         line-height: 1.5;
-            //         letter-spacing: 0.7px;
-            //         margin-right: 12px;
-            //         margin-top: 1px;
-            //     }
-            // }
-            // &--two {
-            //     &::before {
-            //         border-bottom: 4px solid #5e42b0;
-            //         border-radius: 1.5px;
-            //         font-size: 14px;
-            //         line-height: 1.5;
-            //         letter-spacing: 0.7px;
-            //         margin-right: 12px;
-            //         margin-top: 1px;
-            //     }
-            // }
-            // &--three {
-            //     &::before {
-            //         border-bottom: 4px solid #5e42b0;
-            //         border-radius: 1.5px;
-            //         font-size: 14px;
-            //         line-height: 1.5;
-            //         letter-spacing: 0.7px;
-            //         margin-right: 12px;
-            //         margin-top: 1px;
-            //     }
-            // }
-            // &--threeinvert {
-            //     &::before {
-            //         border-bottom: 4px solid #5e42b0;
-            //         border-radius: 1.5px;
-            //         font-size: 14px;
-            //         line-height: 1.5;
-            //         letter-spacing: 0.7px;
-            //         margin-right: 12px;
-            //         margin-top: 1px;
-            //         color: #000000;
-            //     }
-            // }
+            }
         }
         &__description {
             font-size: 15px;
@@ -683,6 +660,10 @@ body {
             padding-bottom: 73px;
             padding-left: 19px;
             padding-right: 19px;
+            &--players {
+                padding-left: 19px;
+                padding-right: 19px;
+            } // width: 100%;
             &--three {
                 color: #000000;
             }
