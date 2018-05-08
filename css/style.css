@@ -411,7 +411,6 @@ body {
   background-repeat: no-repeat;
   background-position: center left;
   overflow: hidden;
-  background-size: contain;
   display: block;
 }
 /* line 364, ../scss/style.scss */
