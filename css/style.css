@@ -395,8 +395,6 @@ body {
   background-repeat: no-repeat;
   background-position: center right;
   background-size: contain;
-  overflow: hidden;
-  display: block;
 }
 /* line 344, ../scss/style.scss */
 .card__img--players {
@@ -410,8 +408,6 @@ body {
   z-index: 2;
   background-repeat: no-repeat;
   background-position: center left;
-  overflow: hidden;
-  display: block;
 }
 /* line 364, ../scss/style.scss */
 .card__title {
@@ -601,20 +597,33 @@ body {
     padding-left: 48px;
     padding-right: 38%;
   }
+  /* line 537, ../scss/style.scss */
+  .card__img--athlets {
+    top: 0;
+    left: 0;
+    width: 38%;
+    background-size: cover;
+  }
+  /* line 543, ../scss/style.scss */
+  .card__img--players {
+    top: -84px;
+    right: 0;
+    background-size: cover;
+  }
 
-  /* line 538, ../scss/style.scss */
+  /* line 553, ../scss/style.scss */
   .row__wrapper {
     padding: 0;
     padding-left: 38%;
     max-width: 62%;
   }
-  /* line 542, ../scss/style.scss */
+  /* line 557, ../scss/style.scss */
   .row__wrapper--players {
     padding: 0;
     padding-right: 38%;
     margin: 0;
   }
-  /* line 548, ../scss/style.scss */
+  /* line 563, ../scss/style.scss */
   .row__title {
     margin: 0;
     padding: 0;
@@ -622,7 +631,7 @@ body {
     padding-left: 32px;
     padding-right: 48px;
   }
-  /* line 554, ../scss/style.scss */
+  /* line 569, ../scss/style.scss */
   .row__title--players {
     margin: 0;
     padding: 0;
@@ -631,11 +640,11 @@ body {
     margin-left: 48px;
     padding-left: 32px;
   }
-  /* line 562, ../scss/style.scss */
+  /* line 577, ../scss/style.scss */
   .row__title_number {
     top: 35px;
   }
-  /* line 566, ../scss/style.scss */
+  /* line 581, ../scss/style.scss */
   .row__description {
     margin: 0;
     margin-top: 32px;
@@ -644,7 +653,7 @@ body {
     padding-bottom: 40px;
     font-size: 18px;
   }
-  /* line 573, ../scss/style.scss */
+  /* line 588, ../scss/style.scss */
   .row__description--players {
     margin: 0;
     margin-top: 32px;
@@ -653,13 +662,29 @@ body {
     padding-bottom: 40px;
   }
 
-  /* line 582, ../scss/style.scss */
+  /* line 597, ../scss/style.scss */
   .slider__controls {
     display: none;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 589, ../scss/style.scss */
+  /* line 605, ../scss/style.scss */
+  .card__img--athlets {
+    width: 100%;
+    height: 50%;
+    top: 10%;
+    background-position: center center;
+    background-size: contain;
+  }
+  /* line 613, ../scss/style.scss */
+  .card__img--players {
+    width: 100%;
+    height: 50%;
+    top: 10%;
+    background-position: center center;
+    background-size: contain;
+  }
+  /* line 621, ../scss/style.scss */
   .card__title {
     font-size: 50px;
     line-height: 1.2;
@@ -670,33 +695,33 @@ body {
     padding-right: 19px;
   }
 
-  /* line 600, ../scss/style.scss */
+  /* line 632, ../scss/style.scss */
   .row__wrapper {
     margin: 0;
     padding: 0;
     max-width: 100%;
   }
-  /* line 604, ../scss/style.scss */
+  /* line 636, ../scss/style.scss */
   .row__wrapper--players {
     padding-right: 0;
   }
-  /* line 608, ../scss/style.scss */
+  /* line 640, ../scss/style.scss */
   .row--one {
     background-color: rgba(94, 66, 176, 0.06);
   }
-  /* line 611, ../scss/style.scss */
+  /* line 643, ../scss/style.scss */
   .row--two {
     background-color: rgba(94, 66, 176, 0.06);
   }
-  /* line 614, ../scss/style.scss */
+  /* line 646, ../scss/style.scss */
   .row--three {
     background-color: rgba(94, 66, 176, 0.06);
   }
-  /* line 618, ../scss/style.scss */
+  /* line 650, ../scss/style.scss */
   .row--players.row--three {
     background-color: rgba(94, 66, 176, 0.06);
   }
-  /* line 622, ../scss/style.scss */
+  /* line 654, ../scss/style.scss */
   .row__title {
     font-size: 28px;
     line-height: 1.23;
@@ -709,7 +734,7 @@ body {
     margin-left: 19px;
     margin-right: 19px;
   }
-  /* line 633, ../scss/style.scss */
+  /* line 665, ../scss/style.scss */
   .row__title_number {
     font-size: 14px;
     line-height: 2.46;
@@ -717,24 +742,24 @@ body {
     top: 77px;
     bottom: 8px;
   }
-  /* line 639, ../scss/style.scss */
+  /* line 671, ../scss/style.scss */
   .row__title_number::before {
     height: 4px;
     border-radius: 1.5px;
   }
-  /* line 643, ../scss/style.scss */
+  /* line 675, ../scss/style.scss */
   .row__title_number--three--players {
     color: #000000;
   }
-  /* line 646, ../scss/style.scss */
+  /* line 678, ../scss/style.scss */
   .row__title_number--three--athlets::before {
     background-color: #5e42b0;
   }
-  /* line 649, ../scss/style.scss */
+  /* line 681, ../scss/style.scss */
   .row__title_number--three--players::before {
     background-color: #5e42b0;
   }
-  /* line 654, ../scss/style.scss */
+  /* line 686, ../scss/style.scss */
   .row__description {
     font-size: 15px;
     line-height: 1.2;
@@ -745,37 +770,37 @@ body {
     padding-left: 19px;
     padding-right: 19px;
   }
-  /* line 663, ../scss/style.scss */
+  /* line 695, ../scss/style.scss */
   .row__description--players {
     padding-left: 19px;
     padding-right: 19px;
   }
-  /* line 667, ../scss/style.scss */
+  /* line 699, ../scss/style.scss */
   .row__description--three {
     color: #000000;
   }
 
-  /* line 672, ../scss/style.scss */
+  /* line 704, ../scss/style.scss */
   .card--athlets .row--one {
     display: none;
   }
 
-  /* line 675, ../scss/style.scss */
+  /* line 707, ../scss/style.scss */
   .card--athlets .row--three {
     display: none;
   }
 
-  /* line 678, ../scss/style.scss */
+  /* line 710, ../scss/style.scss */
   .card--players .row--one {
     display: none;
   }
 
-  /* line 681, ../scss/style.scss */
+  /* line 713, ../scss/style.scss */
   .card--players .row--two {
     display: none;
   }
 
-  /* line 684, ../scss/style.scss */
+  /* line 716, ../scss/style.scss */
   .slider__controls {
     display: flex;
     justify-content: center;
@@ -784,15 +809,15 @@ body {
     top: -33px;
   }
 
-  /* line 696, ../scss/style.scss */
+  /* line 728, ../scss/style.scss */
   .radio__label {
     font-size: 0;
   }
-  /* line 699, ../scss/style.scss */
+  /* line 731, ../scss/style.scss */
   .radio__row {
     display: none;
   }
-  /* line 701, ../scss/style.scss */
+  /* line 733, ../scss/style.scss */
   .radio__row:checked + .radio__label::before {
     content: "";
     width: 10px;
@@ -803,11 +828,11 @@ body {
     display: block;
     margin-left: 12px;
   }
-  /* line 714, ../scss/style.scss */
+  /* line 746, ../scss/style.scss */
   .radio__label:hover {
     cursor: pointer;
   }
-  /* line 717, ../scss/style.scss */
+  /* line 749, ../scss/style.scss */
   .radio__label::before {
     content: "";
     width: 10px;
@@ -819,33 +844,33 @@ body {
     margin-left: 12px;
   }
 }
-/* line 731, ../scss/style.scss */
+/* line 763, ../scss/style.scss */
 .foto {
   width: 50%;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
 }
-/* line 737, ../scss/style.scss */
+/* line 769, ../scss/style.scss */
 .foto__wrap {
   display: flex;
   justify-content: space-between;
 }
-/* line 740, ../scss/style.scss */
+/* line 772, ../scss/style.scss */
 .foto__wrap:nth-child(2n) {
   display: flex;
   flex-direction: row-reverse;
 }
-/* line 743, ../scss/style.scss */
+/* line 775, ../scss/style.scss */
 .foto__wrap:nth-child(2n) .foto__description__title__number {
   right: -80px;
   left: auto;
 }
-/* line 749, ../scss/style.scss */
+/* line 781, ../scss/style.scss */
 .foto__description {
   width: 50%;
 }
-/* line 751, ../scss/style.scss */
+/* line 783, ../scss/style.scss */
 .foto__description__title {
   position: relative;
   font-family: "Proxima Nova", Arial, sans-serif;
@@ -863,7 +888,7 @@ body {
   padding-left: 150px;
   text-transform: uppercase;
 }
-/* line 767, ../scss/style.scss */
+/* line 799, ../scss/style.scss */
 .foto__description__title__number {
   position: absolute;
   top: -45px;
@@ -881,7 +906,7 @@ body {
   text-align: center;
   color: #f5f6f7;
 }
-/* line 783, ../scss/style.scss */
+/* line 815, ../scss/style.scss */
 .foto__description__title__number::after {
   content: "";
   position: absolute;
@@ -895,7 +920,7 @@ body {
   margin: -11px;
   display: block;
 }
-/* line 798, ../scss/style.scss */
+/* line 830, ../scss/style.scss */
 .foto__description__text {
   font-family: "Proxima Nova", Arial, sans-serif;
   margin: 0;
@@ -912,46 +937,46 @@ body {
   padding-left: 150px;
   padding-right: 300px;
 }
-/* line 815, ../scss/style.scss */
+/* line 847, ../scss/style.scss */
 .foto--one {
   background-image: url(../../img/beactive_960x730.png);
 }
-/* line 818, ../scss/style.scss */
+/* line 850, ../scss/style.scss */
 .foto--two {
   background-image: url(../../img/findcontact_960x730.png);
 }
-/* line 821, ../scss/style.scss */
+/* line 853, ../scss/style.scss */
 .foto--three {
   background-image: url(../../img/workit_960x730.png);
 }
 
 @media screen and (max-width: 1440px) {
-  /* line 828, ../scss/style.scss */
+  /* line 860, ../scss/style.scss */
   .foto {
     width: 100%;
   }
-  /* line 830, ../scss/style.scss */
+  /* line 862, ../scss/style.scss */
   .foto__wrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  /* line 834, ../scss/style.scss */
+  /* line 866, ../scss/style.scss */
   .foto__wrap:nth-child(2n) {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  /* line 838, ../scss/style.scss */
+  /* line 870, ../scss/style.scss */
   .foto__wrap:nth-child(2n) .foto__description__title__number {
     right: auto;
     left: auto;
   }
-  /* line 844, ../scss/style.scss */
+  /* line 876, ../scss/style.scss */
   .foto__description {
     width: 100%;
   }
-  /* line 846, ../scss/style.scss */
+  /* line 878, ../scss/style.scss */
   .foto__description__title {
     margin: 0;
     padding: 0;
@@ -960,17 +985,17 @@ body {
     margin-right: 33px;
     max-width: auto;
   }
-  /* line 853, ../scss/style.scss */
+  /* line 885, ../scss/style.scss */
   .foto__description__title__number {
     padding: 40.72px;
     top: -184.28px;
     left: 0;
   }
-  /* line 857, ../scss/style.scss */
+  /* line 889, ../scss/style.scss */
   .foto__description__title__number::after {
     top: 84.28px;
   }
-  /* line 862, ../scss/style.scss */
+  /* line 894, ../scss/style.scss */
   .foto__description__text {
     margin: 0;
     padding: 0;
@@ -979,46 +1004,46 @@ body {
     padding-right: 33px;
     padding-bottom: 110px;
   }
-  /* line 871, ../scss/style.scss */
+  /* line 903, ../scss/style.scss */
   .foto--one {
     min-height: 584px;
   }
-  /* line 874, ../scss/style.scss */
+  /* line 906, ../scss/style.scss */
   .foto--two {
     min-height: 584px;
   }
-  /* line 877, ../scss/style.scss */
+  /* line 909, ../scss/style.scss */
   .foto--three {
     min-height: 584px;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 884, ../scss/style.scss */
+  /* line 916, ../scss/style.scss */
   .foto {
     width: 100%;
   }
-  /* line 886, ../scss/style.scss */
+  /* line 918, ../scss/style.scss */
   .foto__wrap {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  /* line 890, ../scss/style.scss */
+  /* line 922, ../scss/style.scss */
   .foto__wrap:nth-child(2n) {
     display: flex;
     flex-direction: column;
     justify-content: center;
   }
-  /* line 894, ../scss/style.scss */
+  /* line 926, ../scss/style.scss */
   .foto__wrap:nth-child(2n) .foto__description__title__number {
     right: auto;
     left: auto;
   }
-  /* line 900, ../scss/style.scss */
+  /* line 932, ../scss/style.scss */
   .foto__description {
     width: 100%;
   }
-  /* line 902, ../scss/style.scss */
+  /* line 934, ../scss/style.scss */
   .foto__description__title {
     font-size: 28px;
     line-height: 1.23;
@@ -1031,7 +1056,7 @@ body {
     margin-right: 20px;
     max-width: auto;
   }
-  /* line 913, ../scss/style.scss */
+  /* line 945, ../scss/style.scss */
   .foto__description__title__number {
     font-size: 14px;
     line-height: 2.46;
@@ -1040,14 +1065,14 @@ body {
     top: -80px;
     left: 0;
   }
-  /* line 920, ../scss/style.scss */
+  /* line 952, ../scss/style.scss */
   .foto__description__title__number::after {
     width: 16px;
     height: 4px;
     top: 44px;
     margin: -8px;
   }
-  /* line 928, ../scss/style.scss */
+  /* line 960, ../scss/style.scss */
   .foto__description__text {
     font-size: 16px;
     line-height: 1.25;
@@ -1059,20 +1084,20 @@ body {
     padding-right: 20px;
     padding-bottom: 80px;
   }
-  /* line 940, ../scss/style.scss */
+  /* line 972, ../scss/style.scss */
   .foto--one {
     min-height: 351px;
   }
-  /* line 943, ../scss/style.scss */
+  /* line 975, ../scss/style.scss */
   .foto--two {
     min-height: 351px;
   }
-  /* line 946, ../scss/style.scss */
+  /* line 978, ../scss/style.scss */
   .foto--three {
     min-height: 351px;
   }
 }
-/* line 952, ../scss/style.scss */
+/* line 984, ../scss/style.scss */
 .footer {
   font-family: "Proxima Nova", Arial, sans-serif;
   color: #ffffff;
@@ -1082,18 +1107,18 @@ body {
   background-size: cover;
   background-position: center center;
 }
-/* line 960, ../scss/style.scss */
+/* line 992, ../scss/style.scss */
 .footer__wrapper {
   background-color: rgba(10, 14, 52, 0.9);
 }
-/* line 963, ../scss/style.scss */
+/* line 995, ../scss/style.scss */
 .footer__promo {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: relative;
 }
-/* line 968, ../scss/style.scss */
+/* line 1000, ../scss/style.scss */
 .footer__promo::before {
   content: "";
   position: absolute;
@@ -1107,7 +1132,7 @@ body {
   bottom: 0;
   left: 16%;
 }
-/* line 981, ../scss/style.scss */
+/* line 1013, ../scss/style.scss */
 .footer__promo__part1 {
   margin-top: 247px;
   font-size: 90px;
@@ -1121,7 +1146,7 @@ body {
   position: relative;
   z-index: 2;
 }
-/* line 993, ../scss/style.scss */
+/* line 1025, ../scss/style.scss */
 .footer__promo__part1::before {
   content: "";
   position: absolute;
@@ -1135,7 +1160,7 @@ body {
   display: block;
   background-color: #5d40ad;
 }
-/* line 1006, ../scss/style.scss */
+/* line 1038, ../scss/style.scss */
 .footer__promo__part1::after {
   content: "";
   position: absolute;
@@ -1149,7 +1174,7 @@ body {
   display: block;
   background-color: #5d40ad;
 }
-/* line 1020, ../scss/style.scss */
+/* line 1052, ../scss/style.scss */
 .footer__promo__part2 {
   margin-top: 18px;
   font-size: 36px;
@@ -1163,12 +1188,12 @@ body {
   position: relative;
   z-index: 2;
 }
-/* line 1034, ../scss/style.scss */
+/* line 1066, ../scss/style.scss */
 .footer__row {
   background-color: rgba(10, 14, 52, 0.8);
 }
 
-/* line 1039, ../scss/style.scss */
+/* line 1071, ../scss/style.scss */
 .footer-row_wrapper {
   margin-left: 15px;
   margin-right: 15px;
@@ -1177,33 +1202,33 @@ body {
   align-items: center;
 }
 
-/* line 1047, ../scss/style.scss */
+/* line 1079, ../scss/style.scss */
 .social {
   padding-top: 73px;
   padding-bottom: 73px;
   display: flex;
 }
-/* line 1051, ../scss/style.scss */
+/* line 1083, ../scss/style.scss */
 .social__link {
   text-decoration: none;
   margin-right: 30px;
 }
-/* line 1054, ../scss/style.scss */
+/* line 1086, ../scss/style.scss */
 .social__link:last-child {
   margin-right: 0;
 }
-/* line 1057, ../scss/style.scss */
+/* line 1089, ../scss/style.scss */
 .social__link__logo {
   width: 25px;
   height: 25px;
   fill: #ffffff;
 }
-/* line 1061, ../scss/style.scss */
+/* line 1093, ../scss/style.scss */
 .social__link__logo:hover {
   fill: #5e42b0;
 }
 
-/* line 1069, ../scss/style.scss */
+/* line 1101, ../scss/style.scss */
 .contact__link {
   color: #ffffff;
   text-decoration: none;
@@ -1215,57 +1240,57 @@ body {
   line-height: normal;
   letter-spacing: 1px;
 }
-/* line 1079, ../scss/style.scss */
+/* line 1111, ../scss/style.scss */
 .contact__link:hover {
   color: #5e42b0;
 }
 
 @media screen and (max-width: 1140px) {
-  /* line 1088, ../scss/style.scss */
+  /* line 1120, ../scss/style.scss */
   .footer__promo::before {
     top: 128px;
     left: 50%;
     margin-left: -65px;
   }
-  /* line 1093, ../scss/style.scss */
+  /* line 1125, ../scss/style.scss */
   .footer__promo__part1 {
     margin-top: 347px;
     font-size: 80px;
     line-height: 0.75;
     letter-spacing: 4.4px;
   }
-  /* line 1099, ../scss/style.scss */
+  /* line 1131, ../scss/style.scss */
   .footer__promo__part2 {
     font-size: 36px;
     line-height: 1.67;
     letter-spacing: normal;
   }
 
-  /* line 1106, ../scss/style.scss */
+  /* line 1138, ../scss/style.scss */
   .footer-row_wrapper {
     margin-left: 10px;
     margin-right: 10px;
     justify-content: center;
   }
 
-  /* line 1111, ../scss/style.scss */
+  /* line 1143, ../scss/style.scss */
   .social {
     padding-top: 36px;
     padding-bottom: 34px;
   }
 
-  /* line 1115, ../scss/style.scss */
+  /* line 1147, ../scss/style.scss */
   .logo {
     display: none;
   }
 
-  /* line 1118, ../scss/style.scss */
+  /* line 1150, ../scss/style.scss */
   .contact {
     display: none;
   }
 }
 @media screen and (max-width: 767px) {
-  /* line 1126, ../scss/style.scss */
+  /* line 1158, ../scss/style.scss */
   .footer__promo::before {
     top: 97px;
     left: 50%;
@@ -1275,14 +1300,14 @@ body {
     background-image: url(../../img/artwork_73x78.png);
     background-size: 73px 78px;
   }
-  /* line 1135, ../scss/style.scss */
+  /* line 1167, ../scss/style.scss */
   .footer__promo__part1 {
     margin-top: 237px;
     font-size: 34px;
     line-height: normal;
     letter-spacing: 1.7px;
   }
-  /* line 1140, ../scss/style.scss */
+  /* line 1172, ../scss/style.scss */
   .footer__promo__part1::before {
     content: "";
     top: -30%;
@@ -1291,7 +1316,7 @@ body {
     height: 100px;
     transform: rotate(35deg);
   }
-  /* line 1148, ../scss/style.scss */
+  /* line 1180, ../scss/style.scss */
   .footer__promo__part1::after {
     content: "";
     position: absolute;
@@ -1302,37 +1327,37 @@ body {
     height: 200px;
     transform: rotate(35deg);
   }
-  /* line 1159, ../scss/style.scss */
+  /* line 1191, ../scss/style.scss */
   .footer__promo__part2 {
     font-size: 15px;
     line-height: 0.8;
     letter-spacing: normal;
   }
 
-  /* line 1166, ../scss/style.scss */
+  /* line 1198, ../scss/style.scss */
   .footer-row_wrapper {
     margin-left: 10px;
     margin-right: 10px;
     justify-content: center;
   }
 
-  /* line 1171, ../scss/style.scss */
+  /* line 1203, ../scss/style.scss */
   .social {
     padding-top: 19px;
     padding-bottom: 14px;
   }
-  /* line 1174, ../scss/style.scss */
+  /* line 1206, ../scss/style.scss */
   .social__logo {
     width: 17px;
     height: 17px;
   }
 
-  /* line 1179, ../scss/style.scss */
+  /* line 1211, ../scss/style.scss */
   .logo {
     display: none;
   }
 
-  /* line 1182, ../scss/style.scss */
+  /* line 1214, ../scss/style.scss */
   .contact {
     display: none;
   }
