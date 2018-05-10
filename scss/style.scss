@@ -1,7 +1,6 @@
 $container:1560px;
 .container {
 	max-width: $container;
-	outline: 1px solid pink;
 	margin: 0 auto;
 }
 
@@ -319,11 +318,9 @@ body {
 
 .card {
 	position: relative;
-	outline: 1px solid red;
 	&__img {
 		&--athlets {
 			position: absolute;
-			outline: 1px solid green;
 			background-image: url(../img/footballer_678x950.png);
 			top: 20px;
 			left: 0;
@@ -336,7 +333,6 @@ body {
 		}
 		&--players {
 			position: absolute;
-			outline: 1px solid green;
 			background-image: url(../img/player_991x815.png);
 			top: -20px;
 			right: 0;
@@ -975,7 +971,7 @@ body {
 			position: absolute;
 			width: 130px;
 			height: 137px;
-			display: block;
+			display: none;
 			background-image: url(../img/artwork_130x137.png);
 			background-repeat: no-repeat;
 			background-position: center center;
@@ -1033,6 +1029,18 @@ body {
 			color: #a496ca;
 			position: relative;
 			z-index: 2;
+			&::before {
+				content: "";
+				position: absolute;
+				width: 130px;
+				height: 137px;
+				display: block;
+				background-image: url(../img/artwork_130x137.png);
+				background-repeat: no-repeat;
+				background-position: center center;
+				background-size: 130px 137px;
+				bottom: 0;
+				left: -32%;}
 		}
 	}
 	&__row {
@@ -1093,6 +1101,7 @@ body {
 				top: 128px;
 				left: 50%;
 				margin-left: -65px;
+				display: block;
 			}
 			&__part1 {
 				margin-top: 347px;
@@ -1104,6 +1113,9 @@ body {
 				font-size: 36px;
 				line-height: 1.67;
 				letter-spacing: normal;
+				&::before{
+					display: none;
+				}
 			}
 		}
 	}
