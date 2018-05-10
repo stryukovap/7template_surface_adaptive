@@ -389,7 +389,7 @@ body {
   background-image: url(../img/footballer_678x950.png);
   top: 20px;
   left: 0;
-  height: 100%;
+  height: 105%;
   width: 50%;
   z-index: 2;
   background-repeat: no-repeat;
@@ -402,7 +402,7 @@ body {
   outline: 1px solid green;
   background-image: url(../img/player_991x815.png);
   top: -20px;
-  right: 5%;
+  right: 0;
   height: 100%;
   width: 50%;
   z-index: 2;
@@ -601,7 +601,7 @@ body {
   .card__img--athlets {
     top: 0;
     left: 0;
-    width: 38%;
+    width: 33%;
     background-size: cover;
   }
   /* line 526, ../scss/style.scss */
@@ -1054,7 +1054,7 @@ body {
     margin-top: 35px;
     margin-left: 20px;
     margin-right: 20px;
-    max-width: auto;
+    max-width: none;
   }
   /* line 918, ../scss/style.scss */
   .foto__description__title__number {
